@@ -46,6 +46,14 @@
 		724CDEB51E3CF0C5003F47E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724CDEB31E3CF0C5003F47E2 /* LaunchScreen.storyboard */; };
 		724CDEC01E3CF0C5003F47E2 /* WTWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CDEBF1E3CF0C5003F47E2 /* WTWTests.swift */; };
 		724CDECB1E3CF0C5003F47E2 /* WTWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CDECA1E3CF0C5003F47E2 /* WTWUITests.swift */; };
+		72803A101E3F20CB004A543A /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72803A0F1E3F20CB004A543A /* LaunchScreenController.swift */; };
+		72803A121E3F20FF004A543A /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72803A111E3F20FF004A543A /* IntroController.swift */; };
+		72803A151E3F287A004A543A /* Into_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72803A141E3F287A004A543A /* Into_CollectionViewCell.swift */; };
+		72803A171E3F288E004A543A /* Into_CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72803A161E3F288E004A543A /* Into_CollectionViewCell.xib */; };
+		72803A191E3F3261004A543A /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72803A181E3F3261004A543A /* MainMenuViewController.swift */; };
+		72803A1B1E3F32AA004A543A /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72803A1A1E3F32AA004A543A /* PlayViewController.swift */; };
+		72803A1D1E3F3365004A543A /* Play_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72803A1C1E3F3365004A543A /* Play_CollectionViewCell.swift */; };
+		72803A1F1E3F336F004A543A /* Play_CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72803A1E1E3F336F004A543A /* Play_CollectionViewCell.xib */; };
 		ED685A5618896D2F2433BE1B /* Pods_WTWUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6088255D773CCC8424CD55E8 /* Pods_WTWUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +125,14 @@
 		724CDEC61E3CF0C5003F47E2 /* WTWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		724CDECA1E3CF0C5003F47E2 /* WTWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTWUITests.swift; sourceTree = "<group>"; };
 		724CDECC1E3CF0C5003F47E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72803A0F1E3F20CB004A543A /* LaunchScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenController.swift; sourceTree = "<group>"; };
+		72803A111E3F20FF004A543A /* IntroController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroController.swift; sourceTree = "<group>"; };
+		72803A141E3F287A004A543A /* Into_CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Into_CollectionViewCell.swift; sourceTree = "<group>"; };
+		72803A161E3F288E004A543A /* Into_CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Into_CollectionViewCell.xib; sourceTree = "<group>"; };
+		72803A181E3F3261004A543A /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		72803A1A1E3F32AA004A543A /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		72803A1C1E3F3365004A543A /* Play_CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Play_CollectionViewCell.swift; sourceTree = "<group>"; };
+		72803A1E1E3F336F004A543A /* Play_CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Play_CollectionViewCell.xib; sourceTree = "<group>"; };
 		A3F41086240A97D9D50749BF /* Pods-WTWTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTWTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTWTests/Pods-WTWTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABFA271F4C7A051575C7A3AF /* Pods-WTWUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTWUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTWUITests/Pods-WTWUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3B2ECAAFDDF6D9B667FA140 /* Pods-WTW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTW.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTW/Pods-WTW.release.xcconfig"; sourceTree = "<group>"; };
@@ -228,6 +244,12 @@
 				724CDEA71E3CF0C5003F47E2 /* AppDelegate.swift */,
 				724CDEA91E3CF0C5003F47E2 /* ViewController.swift */,
 				724CDEAB1E3CF0C5003F47E2 /* Main.storyboard */,
+				72803A0F1E3F20CB004A543A /* LaunchScreenController.swift */,
+				72803A181E3F3261004A543A /* MainMenuViewController.swift */,
+				72803A1A1E3F32AA004A543A /* PlayViewController.swift */,
+				72803A1C1E3F3365004A543A /* Play_CollectionViewCell.swift */,
+				72803A1E1E3F336F004A543A /* Play_CollectionViewCell.xib */,
+				72803A131E3F285A004A543A /* Intro */,
 				722AEE441E3CFE3800065A60 /* Spring */,
 				724CDEB11E3CF0C5003F47E2 /* Assets.xcassets */,
 				724CDEB31E3CF0C5003F47E2 /* LaunchScreen.storyboard */,
@@ -253,6 +275,16 @@
 				724CDECC1E3CF0C5003F47E2 /* Info.plist */,
 			);
 			path = WTWUITests;
+			sourceTree = "<group>";
+		};
+		72803A131E3F285A004A543A /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				72803A111E3F20FF004A543A /* IntroController.swift */,
+				72803A161E3F288E004A543A /* Into_CollectionViewCell.xib */,
+				72803A141E3F287A004A543A /* Into_CollectionViewCell.swift */,
+			);
+			name = Intro;
 			sourceTree = "<group>";
 		};
 		897758FCAAC4C703CE81E6B9 /* Frameworks */ = {
@@ -388,7 +420,9 @@
 				724CDEB51E3CF0C5003F47E2 /* LaunchScreen.storyboard in Resources */,
 				724CDEB21E3CF0C5003F47E2 /* Assets.xcassets in Resources */,
 				724CDEAD1E3CF0C5003F47E2 /* Main.storyboard in Resources */,
+				72803A171E3F288E004A543A /* Into_CollectionViewCell.xib in Resources */,
 				722AEE721E3CFE3800065A60 /* LoadingView.xib in Resources */,
+				72803A1F1E3F336F004A543A /* Play_CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,9 +585,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72803A121E3F20FF004A543A /* IntroController.swift in Sources */,
 				722AEE691E3CFE3800065A60 /* DesignableLabel.swift in Sources */,
 				722AEE781E3CFE3800065A60 /* SpringImageView.swift in Sources */,
 				722AEE651E3CFE3800065A60 /* AutoTextView.swift in Sources */,
+				72803A1D1E3F3365004A543A /* Play_CollectionViewCell.swift in Sources */,
 				722AEE6E1E3CFE3800065A60 /* ImageLoader.swift in Sources */,
 				722AEE731E3CFE3800065A60 /* Misc.swift in Sources */,
 				722AEE661E3CFE3800065A60 /* BlurView.swift in Sources */,
@@ -566,6 +602,7 @@
 				722AEE6D1E3CFE3800065A60 /* DesignableView.swift in Sources */,
 				722AEE6A1E3CFE3800065A60 /* DesignableTabBarController.swift in Sources */,
 				722AEE671E3CFE3800065A60 /* DesignableButton.swift in Sources */,
+				72803A151E3F287A004A543A /* Into_CollectionViewCell.swift in Sources */,
 				724CDEAA1E3CF0C5003F47E2 /* ViewController.swift in Sources */,
 				722AEE7E1E3CFE3800065A60 /* TransitionZoom.swift in Sources */,
 				722AEE6B1E3CFE3800065A60 /* DesignableTextField.swift in Sources */,
@@ -575,9 +612,12 @@
 				722AEE641E3CFE3800065A60 /* AsyncImageView.swift in Sources */,
 				722AEE6C1E3CFE3800065A60 /* DesignableTextView.swift in Sources */,
 				722AEE7C1E3CFE3800065A60 /* SpringView.swift in Sources */,
+				72803A1B1E3F32AA004A543A /* PlayViewController.swift in Sources */,
 				722AEE7B1E3CFE3800065A60 /* SpringTextView.swift in Sources */,
 				722AEE701E3CFE3800065A60 /* KeyboardLayoutConstraint.swift in Sources */,
+				72803A191E3F3261004A543A /* MainMenuViewController.swift in Sources */,
 				722AEE771E3CFE3800065A60 /* SpringButton.swift in Sources */,
+				72803A101E3F20CB004A543A /* LaunchScreenController.swift in Sources */,
 				722AEE761E3CFE3800065A60 /* SpringAnimation.swift in Sources */,
 				722AEE681E3CFE3800065A60 /* DesignableImageView.swift in Sources */,
 				724CDEA81E3CF0C5003F47E2 /* AppDelegate.swift in Sources */,
@@ -737,6 +777,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2AKDC938YB;
 				INFOPLIST_FILE = WTW/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wuttiporn.WTW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -751,6 +792,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2AKDC938YB;
 				INFOPLIST_FILE = WTW/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wuttiporn.WTW;
 				PRODUCT_NAME = "$(TARGET_NAME)";

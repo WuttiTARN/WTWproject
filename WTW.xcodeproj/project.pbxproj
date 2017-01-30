@@ -7,6 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43A35A36631FEB8C46F73629 /* Pods_WTWTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C68B1F790C8FA38DEB3C387 /* Pods_WTWTests.framework */; };
+		46DE68481A8614CEA200D8FB /* Pods_WTW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3684EBCBAD81598880CA18C6 /* Pods_WTW.framework */; };
+		722AEE631E3CFE3800065A60 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE451E3CFE3800065A60 /* AsyncButton.swift */; };
+		722AEE641E3CFE3800065A60 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE461E3CFE3800065A60 /* AsyncImageView.swift */; };
+		722AEE651E3CFE3800065A60 /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE471E3CFE3800065A60 /* AutoTextView.swift */; };
+		722AEE661E3CFE3800065A60 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE481E3CFE3800065A60 /* BlurView.swift */; };
+		722AEE671E3CFE3800065A60 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE491E3CFE3800065A60 /* DesignableButton.swift */; };
+		722AEE681E3CFE3800065A60 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE4A1E3CFE3800065A60 /* DesignableImageView.swift */; };
+		722AEE691E3CFE3800065A60 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE4B1E3CFE3800065A60 /* DesignableLabel.swift */; };
+		722AEE6A1E3CFE3800065A60 /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE4C1E3CFE3800065A60 /* DesignableTabBarController.swift */; };
+		722AEE6B1E3CFE3800065A60 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE4D1E3CFE3800065A60 /* DesignableTextField.swift */; };
+		722AEE6C1E3CFE3800065A60 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE4E1E3CFE3800065A60 /* DesignableTextView.swift */; };
+		722AEE6D1E3CFE3800065A60 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE4F1E3CFE3800065A60 /* DesignableView.swift */; };
+		722AEE6E1E3CFE3800065A60 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE501E3CFE3800065A60 /* ImageLoader.swift */; };
+		722AEE6F1E3CFE3800065A60 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 722AEE511E3CFE3800065A60 /* Info.plist */; };
+		722AEE701E3CFE3800065A60 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE521E3CFE3800065A60 /* KeyboardLayoutConstraint.swift */; };
+		722AEE711E3CFE3800065A60 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE531E3CFE3800065A60 /* LoadingView.swift */; };
+		722AEE721E3CFE3800065A60 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 722AEE541E3CFE3800065A60 /* LoadingView.xib */; };
+		722AEE731E3CFE3800065A60 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE551E3CFE3800065A60 /* Misc.swift */; };
+		722AEE741E3CFE3800065A60 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE561E3CFE3800065A60 /* SoundPlayer.swift */; };
+		722AEE751E3CFE3800065A60 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE581E3CFE3800065A60 /* Spring.swift */; };
+		722AEE761E3CFE3800065A60 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE591E3CFE3800065A60 /* SpringAnimation.swift */; };
+		722AEE771E3CFE3800065A60 /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE5A1E3CFE3800065A60 /* SpringButton.swift */; };
+		722AEE781E3CFE3800065A60 /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE5B1E3CFE3800065A60 /* SpringImageView.swift */; };
+		722AEE791E3CFE3800065A60 /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE5C1E3CFE3800065A60 /* SpringLabel.swift */; };
+		722AEE7A1E3CFE3800065A60 /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE5D1E3CFE3800065A60 /* SpringTextField.swift */; };
+		722AEE7B1E3CFE3800065A60 /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE5E1E3CFE3800065A60 /* SpringTextView.swift */; };
+		722AEE7C1E3CFE3800065A60 /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE5F1E3CFE3800065A60 /* SpringView.swift */; };
+		722AEE7D1E3CFE3800065A60 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE601E3CFE3800065A60 /* TransitionManager.swift */; };
+		722AEE7E1E3CFE3800065A60 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE611E3CFE3800065A60 /* TransitionZoom.swift */; };
+		722AEE7F1E3CFE3800065A60 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722AEE621E3CFE3800065A60 /* UnwindSegue.swift */; };
 		724CDEA81E3CF0C5003F47E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CDEA71E3CF0C5003F47E2 /* AppDelegate.swift */; };
 		724CDEAA1E3CF0C5003F47E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CDEA91E3CF0C5003F47E2 /* ViewController.swift */; };
 		724CDEAD1E3CF0C5003F47E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724CDEAB1E3CF0C5003F47E2 /* Main.storyboard */; };
@@ -15,6 +46,7 @@
 		724CDEB51E3CF0C5003F47E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724CDEB31E3CF0C5003F47E2 /* LaunchScreen.storyboard */; };
 		724CDEC01E3CF0C5003F47E2 /* WTWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CDEBF1E3CF0C5003F47E2 /* WTWTests.swift */; };
 		724CDECB1E3CF0C5003F47E2 /* WTWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CDECA1E3CF0C5003F47E2 /* WTWUITests.swift */; };
+		ED685A5618896D2F2433BE1B /* Pods_WTWUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6088255D773CCC8424CD55E8 /* Pods_WTWUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +67,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0434A519AB58781A05EC523C /* Pods-WTWUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTWUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTWUITests/Pods-WTWUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2834000AF8F18185D0422C8B /* Pods-WTW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTW.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTW/Pods-WTW.debug.xcconfig"; sourceTree = "<group>"; };
+		3684EBCBAD81598880CA18C6 /* Pods_WTW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C68B1F790C8FA38DEB3C387 /* Pods_WTWTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTWTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6088255D773CCC8424CD55E8 /* Pods_WTWUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTWUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61B7C192DDB87BD89B93D815 /* Pods-WTWTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTWTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTWTests/Pods-WTWTests.debug.xcconfig"; sourceTree = "<group>"; };
+		722AEE451E3CFE3800065A60 /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
+		722AEE461E3CFE3800065A60 /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		722AEE471E3CFE3800065A60 /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
+		722AEE481E3CFE3800065A60 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		722AEE491E3CFE3800065A60 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		722AEE4A1E3CFE3800065A60 /* DesignableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
+		722AEE4B1E3CFE3800065A60 /* DesignableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
+		722AEE4C1E3CFE3800065A60 /* DesignableTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTabBarController.swift; sourceTree = "<group>"; };
+		722AEE4D1E3CFE3800065A60 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		722AEE4E1E3CFE3800065A60 /* DesignableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
+		722AEE4F1E3CFE3800065A60 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		722AEE501E3CFE3800065A60 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		722AEE511E3CFE3800065A60 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		722AEE521E3CFE3800065A60 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		722AEE531E3CFE3800065A60 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		722AEE541E3CFE3800065A60 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		722AEE551E3CFE3800065A60 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		722AEE561E3CFE3800065A60 /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		722AEE571E3CFE3800065A60 /* Spring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spring.h; sourceTree = "<group>"; };
+		722AEE581E3CFE3800065A60 /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		722AEE591E3CFE3800065A60 /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
+		722AEE5A1E3CFE3800065A60 /* SpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringButton.swift; sourceTree = "<group>"; };
+		722AEE5B1E3CFE3800065A60 /* SpringImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringImageView.swift; sourceTree = "<group>"; };
+		722AEE5C1E3CFE3800065A60 /* SpringLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringLabel.swift; sourceTree = "<group>"; };
+		722AEE5D1E3CFE3800065A60 /* SpringTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextField.swift; sourceTree = "<group>"; };
+		722AEE5E1E3CFE3800065A60 /* SpringTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextView.swift; sourceTree = "<group>"; };
+		722AEE5F1E3CFE3800065A60 /* SpringView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringView.swift; sourceTree = "<group>"; };
+		722AEE601E3CFE3800065A60 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		722AEE611E3CFE3800065A60 /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
+		722AEE621E3CFE3800065A60 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		724CDEA41E3CF0C5003F47E2 /* WTW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		724CDEA71E3CF0C5003F47E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		724CDEA91E3CF0C5003F47E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +117,9 @@
 		724CDEC61E3CF0C5003F47E2 /* WTWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		724CDECA1E3CF0C5003F47E2 /* WTWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTWUITests.swift; sourceTree = "<group>"; };
 		724CDECC1E3CF0C5003F47E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3F41086240A97D9D50749BF /* Pods-WTWTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTWTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTWTests/Pods-WTWTests.release.xcconfig"; sourceTree = "<group>"; };
+		ABFA271F4C7A051575C7A3AF /* Pods-WTWUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTWUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTWUITests/Pods-WTWUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3B2ECAAFDDF6D9B667FA140 /* Pods-WTW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTW.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTW/Pods-WTW.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46DE68481A8614CEA200D8FB /* Pods_WTW.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A35A36631FEB8C46F73629 /* Pods_WTWTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +143,63 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED685A5618896D2F2433BE1B /* Pods_WTWUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06A2AECABAE05E9446041135 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2834000AF8F18185D0422C8B /* Pods-WTW.debug.xcconfig */,
+				C3B2ECAAFDDF6D9B667FA140 /* Pods-WTW.release.xcconfig */,
+				61B7C192DDB87BD89B93D815 /* Pods-WTWTests.debug.xcconfig */,
+				A3F41086240A97D9D50749BF /* Pods-WTWTests.release.xcconfig */,
+				ABFA271F4C7A051575C7A3AF /* Pods-WTWUITests.debug.xcconfig */,
+				0434A519AB58781A05EC523C /* Pods-WTWUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		722AEE441E3CFE3800065A60 /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				722AEE451E3CFE3800065A60 /* AsyncButton.swift */,
+				722AEE461E3CFE3800065A60 /* AsyncImageView.swift */,
+				722AEE471E3CFE3800065A60 /* AutoTextView.swift */,
+				722AEE481E3CFE3800065A60 /* BlurView.swift */,
+				722AEE491E3CFE3800065A60 /* DesignableButton.swift */,
+				722AEE4A1E3CFE3800065A60 /* DesignableImageView.swift */,
+				722AEE4B1E3CFE3800065A60 /* DesignableLabel.swift */,
+				722AEE4C1E3CFE3800065A60 /* DesignableTabBarController.swift */,
+				722AEE4D1E3CFE3800065A60 /* DesignableTextField.swift */,
+				722AEE4E1E3CFE3800065A60 /* DesignableTextView.swift */,
+				722AEE4F1E3CFE3800065A60 /* DesignableView.swift */,
+				722AEE501E3CFE3800065A60 /* ImageLoader.swift */,
+				722AEE511E3CFE3800065A60 /* Info.plist */,
+				722AEE521E3CFE3800065A60 /* KeyboardLayoutConstraint.swift */,
+				722AEE531E3CFE3800065A60 /* LoadingView.swift */,
+				722AEE541E3CFE3800065A60 /* LoadingView.xib */,
+				722AEE551E3CFE3800065A60 /* Misc.swift */,
+				722AEE561E3CFE3800065A60 /* SoundPlayer.swift */,
+				722AEE571E3CFE3800065A60 /* Spring.h */,
+				722AEE581E3CFE3800065A60 /* Spring.swift */,
+				722AEE591E3CFE3800065A60 /* SpringAnimation.swift */,
+				722AEE5A1E3CFE3800065A60 /* SpringButton.swift */,
+				722AEE5B1E3CFE3800065A60 /* SpringImageView.swift */,
+				722AEE5C1E3CFE3800065A60 /* SpringLabel.swift */,
+				722AEE5D1E3CFE3800065A60 /* SpringTextField.swift */,
+				722AEE5E1E3CFE3800065A60 /* SpringTextView.swift */,
+				722AEE5F1E3CFE3800065A60 /* SpringView.swift */,
+				722AEE601E3CFE3800065A60 /* TransitionManager.swift */,
+				722AEE611E3CFE3800065A60 /* TransitionZoom.swift */,
+				722AEE621E3CFE3800065A60 /* UnwindSegue.swift */,
+			);
+			path = Spring;
+			sourceTree = "<group>";
+		};
 		724CDE9B1E3CF0C4003F47E2 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +207,8 @@
 				724CDEBE1E3CF0C5003F47E2 /* WTWTests */,
 				724CDEC91E3CF0C5003F47E2 /* WTWUITests */,
 				724CDEA51E3CF0C5003F47E2 /* Products */,
+				06A2AECABAE05E9446041135 /* Pods */,
+				897758FCAAC4C703CE81E6B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +228,7 @@
 				724CDEA71E3CF0C5003F47E2 /* AppDelegate.swift */,
 				724CDEA91E3CF0C5003F47E2 /* ViewController.swift */,
 				724CDEAB1E3CF0C5003F47E2 /* Main.storyboard */,
+				722AEE441E3CFE3800065A60 /* Spring */,
 				724CDEB11E3CF0C5003F47E2 /* Assets.xcassets */,
 				724CDEB31E3CF0C5003F47E2 /* LaunchScreen.storyboard */,
 				724CDEB61E3CF0C5003F47E2 /* Info.plist */,
@@ -128,6 +255,16 @@
 			path = WTWUITests;
 			sourceTree = "<group>";
 		};
+		897758FCAAC4C703CE81E6B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3684EBCBAD81598880CA18C6 /* Pods_WTW.framework */,
+				3C68B1F790C8FA38DEB3C387 /* Pods_WTWTests.framework */,
+				6088255D773CCC8424CD55E8 /* Pods_WTWUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +272,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 724CDECF1E3CF0C5003F47E2 /* Build configuration list for PBXNativeTarget "WTW" */;
 			buildPhases = (
+				785BC96A413F50087293A90F /* [CP] Check Pods Manifest.lock */,
 				724CDEA01E3CF0C4003F47E2 /* Sources */,
 				724CDEA11E3CF0C4003F47E2 /* Frameworks */,
 				724CDEA21E3CF0C4003F47E2 /* Resources */,
+				BB0CAF02BEDAD6C2A71D3189 /* [CP] Embed Pods Frameworks */,
+				D36D34103B13C8591B2B98B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +292,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 724CDED21E3CF0C5003F47E2 /* Build configuration list for PBXNativeTarget "WTWTests" */;
 			buildPhases = (
+				6B571BD34349A01B99973806 /* [CP] Check Pods Manifest.lock */,
 				724CDEB71E3CF0C5003F47E2 /* Sources */,
 				724CDEB81E3CF0C5003F47E2 /* Frameworks */,
 				724CDEB91E3CF0C5003F47E2 /* Resources */,
+				0EE8F028E37B0CAA53ABB593 /* [CP] Embed Pods Frameworks */,
+				516E6A8B8F12F7DFA7C2E638 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +313,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 724CDED51E3CF0C5003F47E2 /* Build configuration list for PBXNativeTarget "WTWUITests" */;
 			buildPhases = (
+				9CC16EE77A02FD2854E95AB7 /* [CP] Check Pods Manifest.lock */,
 				724CDEC21E3CF0C5003F47E2 /* Sources */,
 				724CDEC31E3CF0C5003F47E2 /* Frameworks */,
 				724CDEC41E3CF0C5003F47E2 /* Resources */,
+				A115CE7D56F61A0AA8130081 /* [CP] Embed Pods Frameworks */,
+				9705C3971311FE0E008551D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,9 +384,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				722AEE6F1E3CFE3800065A60 /* Info.plist in Resources */,
 				724CDEB51E3CF0C5003F47E2 /* LaunchScreen.storyboard in Resources */,
 				724CDEB21E3CF0C5003F47E2 /* Assets.xcassets in Resources */,
 				724CDEAD1E3CF0C5003F47E2 /* Main.storyboard in Resources */,
+				722AEE721E3CFE3800065A60 /* LoadingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,13 +408,178 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EE8F028E37B0CAA53ABB593 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTWTests/Pods-WTWTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		516E6A8B8F12F7DFA7C2E638 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTWTests/Pods-WTWTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B571BD34349A01B99973806 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		785BC96A413F50087293A90F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9705C3971311FE0E008551D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTWUITests/Pods-WTWUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CC16EE77A02FD2854E95AB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A115CE7D56F61A0AA8130081 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTWUITests/Pods-WTWUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB0CAF02BEDAD6C2A71D3189 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTW/Pods-WTW-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D36D34103B13C8591B2B98B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTW/Pods-WTW-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		724CDEA01E3CF0C4003F47E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				722AEE691E3CFE3800065A60 /* DesignableLabel.swift in Sources */,
+				722AEE781E3CFE3800065A60 /* SpringImageView.swift in Sources */,
+				722AEE651E3CFE3800065A60 /* AutoTextView.swift in Sources */,
+				722AEE6E1E3CFE3800065A60 /* ImageLoader.swift in Sources */,
+				722AEE731E3CFE3800065A60 /* Misc.swift in Sources */,
+				722AEE661E3CFE3800065A60 /* BlurView.swift in Sources */,
+				722AEE7F1E3CFE3800065A60 /* UnwindSegue.swift in Sources */,
+				722AEE711E3CFE3800065A60 /* LoadingView.swift in Sources */,
+				722AEE7A1E3CFE3800065A60 /* SpringTextField.swift in Sources */,
+				722AEE751E3CFE3800065A60 /* Spring.swift in Sources */,
 				724CDEB01E3CF0C5003F47E2 /* WTW.xcdatamodeld in Sources */,
+				722AEE741E3CFE3800065A60 /* SoundPlayer.swift in Sources */,
+				722AEE6D1E3CFE3800065A60 /* DesignableView.swift in Sources */,
+				722AEE6A1E3CFE3800065A60 /* DesignableTabBarController.swift in Sources */,
+				722AEE671E3CFE3800065A60 /* DesignableButton.swift in Sources */,
 				724CDEAA1E3CF0C5003F47E2 /* ViewController.swift in Sources */,
+				722AEE7E1E3CFE3800065A60 /* TransitionZoom.swift in Sources */,
+				722AEE6B1E3CFE3800065A60 /* DesignableTextField.swift in Sources */,
+				722AEE7D1E3CFE3800065A60 /* TransitionManager.swift in Sources */,
+				722AEE791E3CFE3800065A60 /* SpringLabel.swift in Sources */,
+				722AEE631E3CFE3800065A60 /* AsyncButton.swift in Sources */,
+				722AEE641E3CFE3800065A60 /* AsyncImageView.swift in Sources */,
+				722AEE6C1E3CFE3800065A60 /* DesignableTextView.swift in Sources */,
+				722AEE7C1E3CFE3800065A60 /* SpringView.swift in Sources */,
+				722AEE7B1E3CFE3800065A60 /* SpringTextView.swift in Sources */,
+				722AEE701E3CFE3800065A60 /* KeyboardLayoutConstraint.swift in Sources */,
+				722AEE771E3CFE3800065A60 /* SpringButton.swift in Sources */,
+				722AEE761E3CFE3800065A60 /* SpringAnimation.swift in Sources */,
+				722AEE681E3CFE3800065A60 /* DesignableImageView.swift in Sources */,
 				724CDEA81E3CF0C5003F47E2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +653,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -390,6 +704,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -417,6 +732,7 @@
 		};
 		724CDED01E3CF0C5003F47E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2834000AF8F18185D0422C8B /* Pods-WTW.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2AKDC938YB;
@@ -430,6 +746,7 @@
 		};
 		724CDED11E3CF0C5003F47E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3B2ECAAFDDF6D9B667FA140 /* Pods-WTW.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2AKDC938YB;
@@ -443,6 +760,7 @@
 		};
 		724CDED31E3CF0C5003F47E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61B7C192DDB87BD89B93D815 /* Pods-WTWTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -458,6 +776,7 @@
 		};
 		724CDED41E3CF0C5003F47E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3F41086240A97D9D50749BF /* Pods-WTWTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -473,6 +792,7 @@
 		};
 		724CDED61E3CF0C5003F47E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABFA271F4C7A051575C7A3AF /* Pods-WTWUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2AKDC938YB;
@@ -487,6 +807,7 @@
 		};
 		724CDED71E3CF0C5003F47E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0434A519AB58781A05EC523C /* Pods-WTWUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2AKDC938YB;
@@ -518,6 +839,7 @@
 				724CDED11E3CF0C5003F47E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		724CDED21E3CF0C5003F47E2 /* Build configuration list for PBXNativeTarget "WTWTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +848,7 @@
 				724CDED41E3CF0C5003F47E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		724CDED51E3CF0C5003F47E2 /* Build configuration list for PBXNativeTarget "WTWUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +857,7 @@
 				724CDED71E3CF0C5003F47E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

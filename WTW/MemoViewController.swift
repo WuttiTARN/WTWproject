@@ -10,10 +10,13 @@ import UIKit
 
 class MemoViewController: UIViewController {
 
+    //@IBOutlet weak var bg_memo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //bg_memo.image = UIImage(named: "memo")
     }
 
     override func didReceiveMemoryWarning() {

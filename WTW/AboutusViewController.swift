@@ -9,11 +9,19 @@
 import UIKit
 
 class AboutusViewController: UIViewController {
+    
+    
+    @IBOutlet weak var navigation: UINavigationItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+    }
+    
+    func backAction(){
+        //print("Back Button Clicked")
+        dismiss(animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

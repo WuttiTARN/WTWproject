@@ -12,11 +12,16 @@ class LaunchScreenController: UIViewController {
 
     var storyBoard = UIStoryboard()
     
+    @IBOutlet weak var splashscreen: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        self.perform(#selector(self.goToIntroClass),with:nil,afterDelay:1)
+        self.perform(#selector(self.goToIntroClass),with:nil,afterDelay:2)
+        
+        splashscreen.image = UIImage(named:"splashscreen")
+
     }
     
     func goToIntroClass(){

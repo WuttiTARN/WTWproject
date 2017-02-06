@@ -6,6 +6,7 @@ target 'WTW' do
   use_frameworks!
 
   # Pods for WTW
+  pod 'Firebase/Core'
 
   target 'WTWTests' do
     inherit! :search_paths

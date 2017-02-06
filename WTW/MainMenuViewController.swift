@@ -9,12 +9,28 @@
 import UIKit
 
 class MainMenuViewController: UIViewController {
-
+    
+    @IBOutlet weak var bg_main: UIImageView!
+    
+    @IBAction func btn_easy(_ sender: UIButton) {}
+    
+    @IBAction func btn_medium(_ sender: UIButton) {}
+    
+    @IBAction func btn_hard(_ sender: UIButton) {}
+    
+    @IBAction func btn_rank(_ sender: UIButton) {
+        
+        //btn_rank.image("btnrank", for: [])
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
+        
+        bg_main.image = UIImage(named:"main")
+        
+        }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

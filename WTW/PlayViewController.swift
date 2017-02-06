@@ -16,11 +16,14 @@ class PlayViewController: UIViewController {
     ///
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pausePopup: UIView!
-
+    @IBOutlet weak var bg_playmode: UIImageView!
+    
     override func viewDidLoad() {
+    
         super.viewDidLoad()
         
         self.setCollectionView()
+        bg_playmode.image = UIImage(named:"playmode")
     }
     
     func setCollectionView(){

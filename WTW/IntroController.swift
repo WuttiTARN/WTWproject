@@ -10,12 +10,16 @@ import UIKit
 
 class IntroController: UIViewController,UIScrollViewDelegate {
     
+    
+    var current_page:Int = 0
     var color_array:[UIColor]!
     
     @IBOutlet weak var btnNext: UIButton!
     @IBOutlet weak var view_header: UIView!
     @IBOutlet weak var page_control: UIPageControl!
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    var readyToPlay:Bool = false
     
     override func viewDidLoad() {
         
@@ -26,18 +30,61 @@ class IntroController: UIViewController,UIScrollViewDelegate {
         self.setCollectionView()
     }
     
+    @IBAction func btnSkipPressed(_ sender: Any) {
+        
+        goToMainClass()
+    }
+  
+    @IBAction func btnNextPreesed(_ sender: Any) {
+        
+        if (readyToPlay == true){
+            goToMainClass()
+        }else{
+            
+            var index:Int = 0
+            
+            print("current_page",current_page)
+            
+            if(current_page == 1){
+                index = 1
+            }else if(current_page == 2){
+                index = 2
+            }else{
+                goToMainClass()
+                return
+            }
+            
+            readyToPlay = false
+            let indexPath = IndexPath(row: index, section: 0)
+            page_control.currentPage = index
+            collectionView.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition.centeredHorizontally, animated:true)
+
+        }
+    }
+    
+    func  goToMainClass()  {
+        
+        UserDefaults.standard.set("NO",forKey:"FIRSTTIME_LAUNCHING")
+
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let main_class = storyBoard.instantiateViewController(withIdentifier: "MainMenuViewController") as! MainMenuViewController
+        self.navigationController?.pushViewController(main_class, animated: true)
+    }
+    
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         
         let pageWidth = self.collectionView.frame.size.width
         
-        let current_page = Int(self.collectionView.contentOffset.x / pageWidth)
+        current_page = Int(self.collectionView.contentOffset.x / pageWidth)
         page_control.currentPage = current_page
         view_header.backgroundColor = color_array[current_page]
         
+        readyToPlay = false
         if (current_page == 2){
+            readyToPlay = true
             btnNext.setTitle("Play",for: .normal)
         }else{
-            btnNext.setTitle("Skip",for: .normal)
+            btnNext.setTitle("Next",for: .normal)
         }
     }
     

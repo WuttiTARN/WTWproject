@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import Firebase
+import FirebaseAuth
 
 class PlayViewController: UIViewController {
     
@@ -24,6 +27,9 @@ class PlayViewController: UIViewController {
         
         self.setCollectionView()
         bg_playmode.image = UIImage(named:"playmode")
+        
+        var ref: FIRDatabaseReference!
+        ref = FIRDatabase.database().reference()
     }
     
     func setCollectionView(){

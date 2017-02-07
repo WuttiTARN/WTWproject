@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IntroController: UIViewController,UIScrollViewDelegate {
+class IntroController: BaseViewController,UIScrollViewDelegate {
     
     
     var current_page:Int = 0
@@ -24,15 +24,14 @@ class IntroController: UIViewController,UIScrollViewDelegate {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        //view_header.backgroundColor = color_array[0]
         self.setCollectionView()
-        }
+    }
     
     @IBAction func btnSkipPressed(_ sender: Any) {
         
         goToMainClass()
     }
-  
+    
     @IBAction func btnNextPreesed(_ sender: Any) {
         
         if (readyToPlay == true){
@@ -43,30 +42,24 @@ class IntroController: UIViewController,UIScrollViewDelegate {
             
             print("current_page",current_page)
             
-            if(current_page == 1){
+            if(current_page == 0){
                 index = 1
-            }else if(current_page == 2){
+                readyToPlay = false
+            }else if(current_page == 1){
                 index = 2
+                readyToPlay = true
+                btnNext.setTitle("Play",for: .normal)
             }else{
                 goToMainClass()
-                return
             }
             
-            readyToPlay = false
+            current_page = index
+            
             let indexPath = IndexPath(row: index, section: 0)
             page_control.currentPage = index
             collectionView.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition.centeredHorizontally, animated:true)
-
+            
         }
-    }
-    
-    func  goToMainClass()  {
-        
-        UserDefaults.standard.set("NO",forKey:"FIRSTTIME_LAUNCHING")
-
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let main_class = storyBoard.instantiateViewController(withIdentifier: "MainMenuViewController") as! MainMenuViewController
-        self.navigationController?.pushViewController(main_class, animated: true)
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
@@ -77,7 +70,10 @@ class IntroController: UIViewController,UIScrollViewDelegate {
         page_control.currentPage = current_page
         //view_header.backgroundColor = color_array[current_page]
         
+        print("page ",current_page)
+        
         readyToPlay = false
+        
         if (current_page == 2){
             readyToPlay = true
             btnNext.setTitle("Play",for: .normal)
@@ -88,25 +84,23 @@ class IntroController: UIViewController,UIScrollViewDelegate {
     
     func setCollectionView(){
         collectionView.register(Into_CollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
+        collectionView.register(UINib(nibName:"Into_CollectionViewCell",bundle:nil), forCellWithReuseIdentifier: "Cell")
     }
 }
 
 extension IntroController:UICollectionViewDataSource,UICollectionViewDelegate{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return 3
-//        image_array.count
+        return image_array.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         
         let cell:Into_CollectionViewCell=collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! Into_CollectionViewCell
-        
-        print("image ",image_array[indexPath.row])
         cell.setImage(image_name: image_array[indexPath.row] as! String)
         return cell
     }
-        
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
     }

@@ -19,6 +19,6 @@ class Into_CollectionViewCell: UICollectionViewCell {
     }
     
     func setImage(image_name:String) {        
-//        image_cell.image = UIImage(named: image_name)
+        image_cell.image = UIImage(named: image_name)
     }
 }

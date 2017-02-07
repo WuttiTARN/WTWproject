@@ -24,6 +24,11 @@
 		724CDEC01E3CF0C5003F47E2 /* WTWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CDEBF1E3CF0C5003F47E2 /* WTWTests.swift */; };
 		724CDECB1E3CF0C5003F47E2 /* WTWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CDECA1E3CF0C5003F47E2 /* WTWUITests.swift */; };
 		727773161E49C49300A52656 /* MainMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727773151E49C49300A52656 /* MainMenuModel.swift */; };
+		727773181E49D21A00A52656 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727773171E49D21A00A52656 /* BaseViewController.swift */; };
+		7277731D1E49D7AE00A52656 /* RobotoSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 727773191E49D7AE00A52656 /* RobotoSlab-Bold.ttf */; };
+		7277731E1E49D7AE00A52656 /* RobotoSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7277731A1E49D7AE00A52656 /* RobotoSlab-Light.ttf */; };
+		7277731F1E49D7AE00A52656 /* RobotoSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7277731B1E49D7AE00A52656 /* RobotoSlab-Regular.ttf */; };
+		727773201E49D7AE00A52656 /* RobotoSlab-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7277731C1E49D7AE00A52656 /* RobotoSlab-Thin.ttf */; };
 		72803A101E3F20CB004A543A /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72803A0F1E3F20CB004A543A /* LaunchScreenController.swift */; };
 		72803A121E3F20FF004A543A /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72803A111E3F20FF004A543A /* IntroController.swift */; };
 		72803A151E3F287A004A543A /* Into_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72803A141E3F287A004A543A /* Into_CollectionViewCell.swift */; };
@@ -81,6 +86,11 @@
 		724CDECA1E3CF0C5003F47E2 /* WTWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTWUITests.swift; sourceTree = "<group>"; };
 		724CDECC1E3CF0C5003F47E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		727773151E49C49300A52656 /* MainMenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuModel.swift; sourceTree = "<group>"; };
+		727773171E49D21A00A52656 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		727773191E49D7AE00A52656 /* RobotoSlab-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Bold.ttf"; sourceTree = "<group>"; };
+		7277731A1E49D7AE00A52656 /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Light.ttf"; sourceTree = "<group>"; };
+		7277731B1E49D7AE00A52656 /* RobotoSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Regular.ttf"; sourceTree = "<group>"; };
+		7277731C1E49D7AE00A52656 /* RobotoSlab-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Thin.ttf"; sourceTree = "<group>"; };
 		72803A0F1E3F20CB004A543A /* LaunchScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenController.swift; sourceTree = "<group>"; };
 		72803A111E3F20FF004A543A /* IntroController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroController.swift; sourceTree = "<group>"; };
 		72803A141E3F287A004A543A /* Into_CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Into_CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -219,8 +229,10 @@
 				723E67821E486AC80053F3F2 /* GoogleService-Info.plist */,
 				724CDEB11E3CF0C5003F47E2 /* Assets.xcassets */,
 				724CDEA71E3CF0C5003F47E2 /* AppDelegate.swift */,
+				727773171E49D21A00A52656 /* BaseViewController.swift */,
 				724CDEA91E3CF0C5003F47E2 /* ViewController.swift */,
 				724CDEAB1E3CF0C5003F47E2 /* Main.storyboard */,
+				727773211E49D7B500A52656 /* Font */,
 				72296B421E42E98800D40DBF /* LaunchScreen */,
 				72803A131E3F285A004A543A /* Intro */,
 				72296B4A1E42F0C700D40DBF /* Main */,
@@ -250,6 +262,17 @@
 				724CDECC1E3CF0C5003F47E2 /* Info.plist */,
 			);
 			path = WTWUITests;
+			sourceTree = "<group>";
+		};
+		727773211E49D7B500A52656 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				727773191E49D7AE00A52656 /* RobotoSlab-Bold.ttf */,
+				7277731A1E49D7AE00A52656 /* RobotoSlab-Light.ttf */,
+				7277731B1E49D7AE00A52656 /* RobotoSlab-Regular.ttf */,
+				7277731C1E49D7AE00A52656 /* RobotoSlab-Thin.ttf */,
+			);
+			name = Font;
 			sourceTree = "<group>";
 		};
 		72803A131E3F285A004A543A /* Intro */ = {
@@ -398,7 +421,11 @@
 				724CDEB51E3CF0C5003F47E2 /* LaunchScreen.storyboard in Resources */,
 				724CDEB21E3CF0C5003F47E2 /* Assets.xcassets in Resources */,
 				724CDEAD1E3CF0C5003F47E2 /* Main.storyboard in Resources */,
+				7277731D1E49D7AE00A52656 /* RobotoSlab-Bold.ttf in Resources */,
+				7277731E1E49D7AE00A52656 /* RobotoSlab-Light.ttf in Resources */,
+				7277731F1E49D7AE00A52656 /* RobotoSlab-Regular.ttf in Resources */,
 				72803A171E3F288E004A543A /* Into_CollectionViewCell.xib in Resources */,
+				727773201E49D7AE00A52656 /* RobotoSlab-Thin.ttf in Resources */,
 				72803A1F1E3F336F004A543A /* Play_CollectionViewCell.xib in Resources */,
 				723E67831E486AC80053F3F2 /* GoogleService-Info.plist in Resources */,
 			);
@@ -576,6 +603,7 @@
 				72803A1B1E3F32AA004A543A /* PlayViewController.swift in Sources */,
 				72803A191E3F3261004A543A /* MainMenuViewController.swift in Sources */,
 				72803A101E3F20CB004A543A /* LaunchScreenController.swift in Sources */,
+				727773181E49D21A00A52656 /* BaseViewController.swift in Sources */,
 				724CDEA81E3CF0C5003F47E2 /* AppDelegate.swift in Sources */,
 				72296B4F1E42F12B00D40DBF /* SettingViewController.swift in Sources */,
 			);

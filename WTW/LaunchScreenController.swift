@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LaunchScreenController: UIViewController {
+class LaunchScreenController: BaseViewController {
     
     var storyBoard = UIStoryboard()
     
@@ -43,11 +43,4 @@ class LaunchScreenController: UIViewController {
         let intro_class = storyBoard.instantiateViewController(withIdentifier: "IntroController") as! IntroController
         self.navigationController?.pushViewController(intro_class, animated: true)
     }
-    
-    func goToMainClass(){
-        
-        let main_class = storyBoard.instantiateViewController(withIdentifier: "MainMenuViewController") as! MainMenuViewController
-        self.navigationController?.pushViewController(main_class, animated: true)
-    }
-    
 }

@@ -12,7 +12,7 @@ class IntroController: UIViewController,UIScrollViewDelegate {
     
     
     var current_page:Int = 0
-    var color_array:[UIColor]!
+    var image_array:NSArray = ["intro1","intro2","intro3"]
     
     @IBOutlet weak var btnNext: UIButton!
     @IBOutlet weak var view_header: UIView!
@@ -24,11 +24,9 @@ class IntroController: UIViewController,UIScrollViewDelegate {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        color_array = [UIColor.red,UIColor.blue,UIColor.green]
-        
-        view_header.backgroundColor = color_array[0]
+        //view_header.backgroundColor = color_array[0]
         self.setCollectionView()
-    }
+        }
     
     @IBAction func btnSkipPressed(_ sender: Any) {
         
@@ -77,7 +75,7 @@ class IntroController: UIViewController,UIScrollViewDelegate {
         
         current_page = Int(self.collectionView.contentOffset.x / pageWidth)
         page_control.currentPage = current_page
-        view_header.backgroundColor = color_array[current_page]
+        //view_header.backgroundColor = color_array[current_page]
         
         readyToPlay = false
         if (current_page == 2){
@@ -97,13 +95,15 @@ extension IntroController:UICollectionViewDataSource,UICollectionViewDelegate{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
         return 3
+//        image_array.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
+        
         let cell:Into_CollectionViewCell=collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! Into_CollectionViewCell
         
-        cell.backgroundColor = color_array[indexPath.row]
-        
+        print("image ",image_array[indexPath.row])
+        cell.setImage(image_name: image_array[indexPath.row] as! String)
         return cell
     }
         

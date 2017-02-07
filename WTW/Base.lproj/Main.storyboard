@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,26 +40,26 @@
         <scene sceneID="878-g4-Xab">
             <objects>
                 <viewController storyboardIdentifier="IntroController" id="Pe4-Yl-bZ7" customClass="IntroController" customModule="WTW" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uDu-yY-yJr" customClass="Introduction_1">
+                    <view key="view" contentMode="scaleToFill" id="uDu-yY-yJr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" dataMode="prototypes" id="7s7-g0-OdM">
-                                <rect key="frame" x="16" y="184" width="350" height="350"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="nxO-Q3-tQC">
-                                    <size key="itemSize" width="350" height="350"/>
+                                    <size key="itemSize" width="375" height="662"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="RVn-5k-gYg">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="350"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" id="RVn-5k-gYg">
+                                        <rect key="frame" x="0.0" y="3" width="375" height="662"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="350" height="350"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="662"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
                                     </collectionViewCell>
@@ -76,11 +75,6 @@
                                 <color key="pageIndicatorTintColor" red="0.34509803921568627" green="0.69411764705882351" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.87450980392156863" green="0.30196078431372547" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
-                            <view contentMode="scaleToFill" misplaced="YES" id="OO8-Lh-y6x">
-                                <rect key="frame" x="71" y="39" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ScX-Po-Pa8">
                                 <rect key="frame" x="145" y="573" width="85" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -108,7 +102,6 @@
                         <outlet property="btnNext" destination="ScX-Po-Pa8" id="psg-Hw-2vs"/>
                         <outlet property="collectionView" destination="7s7-g0-OdM" id="chN-Ux-ywS"/>
                         <outlet property="page_control" destination="zQj-4V-iyJ" id="cud-P7-yXB"/>
-                        <outlet property="view_header" destination="OO8-Lh-y6x" id="Eg1-2B-yIQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="muZ-VX-cc7" userLabel="First Responder" sceneMemberID="firstResponder"/>

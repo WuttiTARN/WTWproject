@@ -23,6 +23,7 @@
 		724CDEB51E3CF0C5003F47E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724CDEB31E3CF0C5003F47E2 /* LaunchScreen.storyboard */; };
 		724CDEC01E3CF0C5003F47E2 /* WTWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CDEBF1E3CF0C5003F47E2 /* WTWTests.swift */; };
 		724CDECB1E3CF0C5003F47E2 /* WTWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724CDECA1E3CF0C5003F47E2 /* WTWUITests.swift */; };
+		727773161E49C49300A52656 /* MainMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727773151E49C49300A52656 /* MainMenuModel.swift */; };
 		72803A101E3F20CB004A543A /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72803A0F1E3F20CB004A543A /* LaunchScreenController.swift */; };
 		72803A121E3F20FF004A543A /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72803A111E3F20FF004A543A /* IntroController.swift */; };
 		72803A151E3F287A004A543A /* Into_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72803A141E3F287A004A543A /* Into_CollectionViewCell.swift */; };
@@ -79,6 +80,7 @@
 		724CDEC61E3CF0C5003F47E2 /* WTWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		724CDECA1E3CF0C5003F47E2 /* WTWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTWUITests.swift; sourceTree = "<group>"; };
 		724CDECC1E3CF0C5003F47E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		727773151E49C49300A52656 /* MainMenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuModel.swift; sourceTree = "<group>"; };
 		72803A0F1E3F20CB004A543A /* LaunchScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenController.swift; sourceTree = "<group>"; };
 		72803A111E3F20FF004A543A /* IntroController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroController.swift; sourceTree = "<group>"; };
 		72803A141E3F287A004A543A /* Into_CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Into_CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				72803A181E3F3261004A543A /* MainMenuViewController.swift */,
+				727773151E49C49300A52656 /* MainMenuModel.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -563,6 +566,7 @@
 				72803A121E3F20FF004A543A /* IntroController.swift in Sources */,
 				72296B471E42EFCB00D40DBF /* RankViewController.swift in Sources */,
 				72803A1D1E3F3365004A543A /* Play_CollectionViewCell.swift in Sources */,
+				727773161E49C49300A52656 /* MainMenuModel.swift in Sources */,
 				7287EEE41E418BA40092422A /* MemoViewController.swift in Sources */,
 				724CDEB01E3CF0C5003F47E2 /* WTW.xcdatamodeld in Sources */,
 				72803A151E3F287A004A543A /* Into_CollectionViewCell.swift in Sources */,

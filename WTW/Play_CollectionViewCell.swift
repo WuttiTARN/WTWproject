@@ -10,4 +10,5 @@ import UIKit
 
 class Play_CollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var image_cell: UIImageView!
 }

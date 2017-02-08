@@ -9,20 +9,14 @@
 import UIKit
 
 class LaunchScreenController: BaseViewController {
-    
-//    var storyBoard = UIStoryboard()
-    
+        
     @IBOutlet weak var splashscreen: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        
-        splashscreen.image = UIImage(named:"splashscreen")
-        
+  
         //ถ้าไม่เนี้ยบพอ ให้เปิดตรงนี้ไว้เช็ค
-        UserDefaults.standard.removeObject(forKey: "FIRSTTIME_LAUNCHING")
+//        UserDefaults.standard.removeObject(forKey: "FIRSTTIME_LAUNCHING")
 
         //getค่าจากkey user default ว่ามีไหม ใส่ตัวแปร result
         let result = UserDefaults.standard.value(forKey: "FIRSTTIME_LAUNCHING")

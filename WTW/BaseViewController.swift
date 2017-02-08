@@ -26,10 +26,10 @@ class BaseViewController: UIViewController {
 //    }
     
     func addShadowBtn(button:UIButton) {
-        button.layer.shadowColor = UIColor.black.cgColor
-        button.layer.shadowOpacity = 1
+        button.layer.shadowColor = UIColor.darkGray.cgColor
+        button.layer.shadowOpacity = 2
         button.layer.shadowOffset = CGSize(width: 0, height: 5)
-        button.layer.shadowRadius = 3
+        button.layer.shadowRadius = 1
     }
     
     func  goToMainClass()  {
@@ -41,7 +41,7 @@ class BaseViewController: UIViewController {
     func  goToPlayClass(level:Int)  {
         
         let play_class = storyBoard.instantiateViewController(withIdentifier: "PlayViewController") as! PlayViewController
-//        play_class.set_play_level(level: level)
+        play_class.set_play_level(level: level)
         self.navigationController?.pushViewController(play_class, animated: true)
     }
     

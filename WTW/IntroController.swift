@@ -14,6 +14,7 @@ class IntroController: BaseViewController,UIScrollViewDelegate {
     var current_page:Int = 0
     var image_array:NSArray = ["intro1","intro2","intro3"]
     
+    @IBOutlet weak var btnSkip: UIButton!
     @IBOutlet weak var btnNext: UIButton!
     @IBOutlet weak var view_header: UIView!
     @IBOutlet weak var page_control: UIPageControl!
@@ -24,7 +25,15 @@ class IntroController: BaseViewController,UIScrollViewDelegate {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        self.setCollectionView()
+        set_ui()
+    }
+    
+    func set_ui (){
+        
+        //ทำปุ่มให้โค้งมน
+        btnNext.layer.cornerRadius = 26
+        addShadowBtn(button: btnNext)
+        setCollectionView()
     }
     
     @IBAction func btnSkipPressed(_ sender: Any) {
@@ -39,7 +48,8 @@ class IntroController: BaseViewController,UIScrollViewDelegate {
         }else{
             
             var index:Int = 0
-            
+            btnSkip.isHidden = false
+
             print("current_page",current_page)
             
             if(current_page == 0){
@@ -48,6 +58,7 @@ class IntroController: BaseViewController,UIScrollViewDelegate {
             }else if(current_page == 1){
                 index = 2
                 readyToPlay = true
+                btnSkip.isHidden = true
                 btnNext.setTitle("Play",for: .normal)
             }else{
                 goToMainClass()
@@ -58,7 +69,6 @@ class IntroController: BaseViewController,UIScrollViewDelegate {
             let indexPath = IndexPath(row: index, section: 0)
             page_control.currentPage = index
             collectionView.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition.centeredHorizontally, animated:true)
-            
         }
     }
     
@@ -73,9 +83,11 @@ class IntroController: BaseViewController,UIScrollViewDelegate {
         print("page ",current_page)
         
         readyToPlay = false
-        
+        btnSkip.isHidden = false
+
         if (current_page == 2){
             readyToPlay = true
+            btnSkip.isHidden = true
             btnNext.setTitle("Play",for: .normal)
         }else{
             btnNext.setTitle("Next",for: .normal)

@@ -10,18 +10,44 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
+//    var loading:Loading = Loading()
+    
+    let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
+    
+//    func setLoadingView() {
+//        
+//        loading = (Bundle.main.loadNibNamed("Loading", owner: nil, options: nil)?[0] as? Loading)!
+//        loading.isHidden = true
+//        self.view.addSubview(loading)
+//    }
+    
+    func addShadowBtn(button:UIButton) {
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOpacity = 1
+        button.layer.shadowOffset = CGSize(width: 0, height: 5)
+        button.layer.shadowRadius = 3
+    }
+    
     func  goToMainClass()  {
         
-        UserDefaults.standard.set("NO",forKey:"FIRSTTIME_LAUNCHING")
-        
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let main_class = storyBoard.instantiateViewController(withIdentifier: "MainMenuViewController") as! MainMenuViewController
         self.navigationController?.pushViewController(main_class, animated: true)
+    }
+    
+    func  goToPlayClass(level:Int)  {
+        
+        let play_class = storyBoard.instantiateViewController(withIdentifier: "PlayViewController") as! PlayViewController
+//        play_class.set_play_level(level: level)
+        self.navigationController?.pushViewController(play_class, animated: true)
+    }
+    
+    func goToIntroClass(){
+        
+        let intro_class = storyBoard.instantiateViewController(withIdentifier: "IntroController") as! IntroController
+        self.navigationController?.pushViewController(intro_class, animated: true)
     }
 }

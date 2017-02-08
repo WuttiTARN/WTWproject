@@ -83,8 +83,9 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ScX-Po-Pa8">
                                 <rect key="frame" x="83" y="568" width="209" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99215686274509807" green="0.96078431372549022" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="20"/>
-                                <state key="normal" title="Next" backgroundImage="btn_yellow">
+                                <state key="normal" title="Next">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -92,9 +93,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uTY-yM-i7E">
-                                <rect key="frame" x="328" y="20" width="30" height="30"/>
+                                <rect key="frame" x="340" y="20" width="15" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Skip"/>
+                                <state key="normal" backgroundImage="btn_cancel"/>
                                 <connections>
                                     <action selector="btnSkipPressed:" destination="Pe4-Yl-bZ7" eventType="touchUpInside" id="dCE-9z-wim"/>
                                 </connections>
@@ -104,6 +105,7 @@
                     </view>
                     <connections>
                         <outlet property="btnNext" destination="ScX-Po-Pa8" id="psg-Hw-2vs"/>
+                        <outlet property="btnSkip" destination="uTY-yM-i7E" id="Ndy-wZ-kjs"/>
                         <outlet property="collectionView" destination="7s7-g0-OdM" id="chN-Ux-ywS"/>
                         <outlet property="page_control" destination="zQj-4V-iyJ" id="cud-P7-yXB"/>
                     </connections>
@@ -187,17 +189,16 @@
                                     <action selector="btn_hard:" destination="GF4-04-yBU" eventType="touchUpInside" id="CUo-SL-dxd"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" id="Rah-4K-XKw">
-                                <rect key="frame" x="67" y="576" width="67" height="54"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jgd-WG-Ctn">
+                                <rect key="frame" x="73" y="592" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="bg_main" destination="xfw-rk-pxW" id="Ksq-tA-SnA"/>
-                        <outlet property="view_rank" destination="Rah-4K-XKw" id="dm0-gT-4gb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gg8-jF-Sze" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -494,7 +495,7 @@
     </scenes>
     <resources>
         <image name="aboutus" width="375" height="667"/>
-        <image name="btn_yellow" width="211" height="58"/>
+        <image name="btn_cancel" width="18" height="18"/>
         <image name="main" width="375" height="667"/>
         <image name="memo" width="375" height="667"/>
         <image name="setting" width="375" height="667"/>

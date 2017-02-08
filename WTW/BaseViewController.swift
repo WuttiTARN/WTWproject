@@ -9,8 +9,8 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-
-//    var loading:Loading = Loading()
+    
+    //var loading:Loading = Loading()
     
     let storyBoard = UIStoryboard(name: "Main", bundle: nil)
     
@@ -25,11 +25,31 @@ class BaseViewController: UIViewController {
 //        self.view.addSubview(loading)
 //    }
     
+    func randomArray(old_array:NSMutableArray) -> NSMutableArray{
+        
+        let count:NSInteger = old_array.count - 1
+        
+        if (count > 1){
+            
+            var i:Int = 0
+            
+            for _ in 0...count{
+                
+                old_array.exchangeObject(at: i, withObjectAt: Int(arc4random_uniform(UInt32((__int32_t)(i + 1)))))
+                i = i+1
+            }
+        }
+        
+        let new_array = NSMutableArray.init(array: old_array)
+        return new_array
+    }
+    
     func addShadowBtn(button:UIButton) {
-        button.layer.shadowColor = UIColor.darkGray.cgColor
-        button.layer.shadowOpacity = 2
+        
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOpacity = 1
         button.layer.shadowOffset = CGSize(width: 0, height: 5)
-        button.layer.shadowRadius = 1
+        button.layer.shadowRadius = 3
     }
     
     func  goToMainClass()  {

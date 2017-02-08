@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import Kingfisher
 
 class Play_CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var image_cell: UIImageView!
+    
+    func setImageCell(image_array:NSMutableDictionary){
+        self.image_cell.kf.setImage(with: URL(string: "\((image_array["image"])!)"));
+    }
 }

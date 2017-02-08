@@ -12,6 +12,7 @@ target 'WTW' do
   pod 'FBSDKCoreKit'
   pod 'FBSDKShareKit'
   pod 'FBSDKLoginKit'
+  pod 'Kingfisher', '~> 3.0'
 
   target 'WTWTests' do
     inherit! :search_paths

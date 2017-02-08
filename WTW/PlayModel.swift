@@ -10,8 +10,7 @@ import UIKit
 import Firebase
 
 class PlayModel: IPlay {
-
-    var dic_db:NSMutableDictionary = NSMutableDictionary()
+    
     var ref = FIRDatabase.database().reference()
     
     var dic_vocab:NSMutableDictionary = NSMutableDictionary()
@@ -19,14 +18,14 @@ class PlayModel: IPlay {
     
     var dic_image_vocab:NSMutableDictionary = NSMutableDictionary()
     var dic_image_vocab_count:Int! = 0
-
+    
     func getVocabDataWithLevel(level:Int){
         
         let str_level:String!
         
-        if (level == 0){
+        if (level == 1){
             str_level = "Easy"
-        }else if (level == 1){
+        }else if (level == 2){
             str_level = "Medium"
         }else{
             str_level = "Hard"
@@ -39,20 +38,31 @@ class PlayModel: IPlay {
             let sub_vocab_data:NSMutableDictionary = vocab_data["Vocabularies"] as! NSMutableDictionary
             
             self.dic_vocab = (sub_vocab_data[str_level] as! NSMutableDictionary)
-            self.vocab_count = (sub_vocab_data[str_level] as! NSMutableDictionary).count
-            self.dic_db = sub_vocab_data[str_level] as! NSMutableDictionary
             
-            print("get vocab data ",self.dic_db)
+            self.vocab_count = (sub_vocab_data[str_level] as! NSMutableDictionary).count
+            
+            print("get vocab data ",self.dic_vocab)
+            NotificationCenter.default.post(name:NSNotification.Name(rawValue: "SET_VOCAB"), object: nil)
         }
     }
     
-    func getIDVocab(index:Int) -> Int {
+    func getVocab(index:Int,key:String) -> Any {
         
         let key_index:String = String(format:"vocab%d",index)
         let dic_vocab_with_index:NSMutableDictionary = dic_vocab[key_index] as! NSMutableDictionary
         
-        let vocab_id = dic_vocab_with_index["id"]
+        let vocab_id = dic_vocab_with_index[key]
         
-        return vocab_id as! Int
+        return vocab_id as Any
+    }
+    
+    func getImagesVocab(index:Int) -> NSMutableDictionary{
+        
+        print("dic_vocab",dic_vocab)
+        
+        let key_index:String = String(format:"vocab%d",index)
+        let dic_vocab_with_index:NSMutableDictionary = dic_vocab[key_index] as! NSMutableDictionary
+        
+        return dic_vocab_with_index["images"] as! NSMutableDictionary
     }
 }

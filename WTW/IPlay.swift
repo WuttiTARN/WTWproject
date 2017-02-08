@@ -11,7 +11,8 @@ import Foundation
 
 protocol IPlay {
     
-    func getIDVocab(index:Int) -> Int
+    func getVocab(index:Int,key:String) -> Any
+    func getImagesVocab(index:Int) -> NSMutableDictionary
     func getVocabDataWithLevel(level:Int)
 }
 

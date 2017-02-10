@@ -38,10 +38,9 @@ class PlayModel: IPlay {
             let sub_vocab_data:NSMutableDictionary = vocab_data["Vocabularies"] as! NSMutableDictionary
             
             self.dic_vocab = (sub_vocab_data[str_level] as! NSMutableDictionary)
-            
             self.vocab_count = (sub_vocab_data[str_level] as! NSMutableDictionary).count
             
-            print("get vocab data ",self.dic_vocab)
+            //            print("get vocab data ",self.dic_vocab)
             NotificationCenter.default.post(name:NSNotification.Name(rawValue: "SET_VOCAB"), object: nil)
         }
     }
@@ -49,20 +48,47 @@ class PlayModel: IPlay {
     func getVocab(index:Int,key:String) -> Any {
         
         let key_index:String = String(format:"vocab%d",index)
-        let dic_vocab_with_index:NSMutableDictionary = dic_vocab[key_index] as! NSMutableDictionary
         
-        let vocab_id = dic_vocab_with_index[key]
-        
-        return vocab_id as Any
+        if (dic_vocab[key_index] != nil){
+            let dic_vocab_with_index:NSMutableDictionary = dic_vocab[key_index] as! NSMutableDictionary
+            
+            let vocab_id = dic_vocab_with_index[key]
+            return vocab_id as Any
+        }else{
+            return 1
+        }
     }
     
     func getImagesVocab(index:Int) -> NSMutableDictionary{
-        
-        print("dic_vocab",dic_vocab)
         
         let key_index:String = String(format:"vocab%d",index)
         let dic_vocab_with_index:NSMutableDictionary = dic_vocab[key_index] as! NSMutableDictionary
         
         return dic_vocab_with_index["images"] as! NSMutableDictionary
+    }
+    
+    func getImageVocabWithId(id:Int) -> String{
+        
+        let key_index:String = String(format:"vocab%d",id)
+        let dic_vocab_with_index:NSMutableDictionary = dic_vocab[key_index] as! NSMutableDictionary
+        let images_dic:NSMutableDictionary = dic_vocab_with_index["images"] as! NSMutableDictionary
+        
+        return images_dic["image1"] as! String
+    }
+    
+    func randomIndexOfRandomImage() -> NSMutableArray {
+        
+        let base_class = BaseViewController()
+        
+        var number_array = NSMutableArray()
+        var i:Int = 0
+        
+        for _ in 1...66 {
+            number_array.add(i)
+            i = i+1
+        }
+        
+        number_array = base_class.randomArray(old_array: number_array)
+        return number_array
     }
 }

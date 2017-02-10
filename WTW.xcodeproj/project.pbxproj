@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		43A35A36631FEB8C46F73629 /* Pods_WTWTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C68B1F790C8FA38DEB3C387 /* Pods_WTWTests.framework */; };
 		46DE68481A8614CEA200D8FB /* Pods_WTW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3684EBCBAD81598880CA18C6 /* Pods_WTW.framework */; };
+		7201DBBA1E4C6D1E0029E146 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7201DBB91E4C6D1E0029E146 /* ResultViewController.swift */; };
+		7201DBBD1E4C6D750029E146 /* Result_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7201DBBB1E4C6D750029E146 /* Result_CollectionViewCell.swift */; };
+		7201DBBE1E4C6D750029E146 /* Result_CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7201DBBC1E4C6D750029E146 /* Result_CollectionViewCell.xib */; };
+		721E49101E4D9E2A00DD1526 /* MemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721E490E1E4D9E2A00DD1526 /* MemoTableViewCell.swift */; };
+		721E49111E4D9E2A00DD1526 /* MemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721E490F1E4D9E2A00DD1526 /* MemoTableViewCell.xib */; };
 		72296B471E42EFCB00D40DBF /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72296B451E42EFCB00D40DBF /* RankViewController.swift */; };
 		72296B481E42EFCB00D40DBF /* RankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72296B461E42EFCB00D40DBF /* RankViewController.xib */; };
 		72296B4F1E42F12B00D40DBF /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72296B4D1E42F12B00D40DBF /* SettingViewController.swift */; };
@@ -68,6 +73,12 @@
 		3C68B1F790C8FA38DEB3C387 /* Pods_WTWTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTWTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6088255D773CCC8424CD55E8 /* Pods_WTWUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTWUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B7C192DDB87BD89B93D815 /* Pods-WTWTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTWTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTWTests/Pods-WTWTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7201DBB81E4C5F6F0029E146 /* Nickname DEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nickname DEMO.otf"; sourceTree = "<group>"; };
+		7201DBB91E4C6D1E0029E146 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		7201DBBB1E4C6D750029E146 /* Result_CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result_CollectionViewCell.swift; sourceTree = "<group>"; };
+		7201DBBC1E4C6D750029E146 /* Result_CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Result_CollectionViewCell.xib; sourceTree = "<group>"; };
+		721E490E1E4D9E2A00DD1526 /* MemoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoTableViewCell.swift; sourceTree = "<group>"; };
+		721E490F1E4D9E2A00DD1526 /* MemoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemoTableViewCell.xib; sourceTree = "<group>"; };
 		72296B451E42EFCB00D40DBF /* RankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
 		72296B461E42EFCB00D40DBF /* RankViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankViewController.xib; sourceTree = "<group>"; };
 		72296B4D1E42F12B00D40DBF /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +163,33 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7201DBBF1E4C6D7C0029E146 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				7201DBB91E4C6D1E0029E146 /* ResultViewController.swift */,
+				7201DBC01E4C6D8D0029E146 /* UI Cell */,
+			);
+			name = Result;
+			sourceTree = "<group>";
+		};
+		7201DBC01E4C6D8D0029E146 /* UI Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7201DBBB1E4C6D750029E146 /* Result_CollectionViewCell.swift */,
+				7201DBBC1E4C6D750029E146 /* Result_CollectionViewCell.xib */,
+			);
+			name = "UI Cell";
+			sourceTree = "<group>";
+		};
+		721E49121E4D9FF600DD1526 /* UI Cell */ = {
+			isa = PBXGroup;
+			children = (
+				721E490E1E4D9E2A00DD1526 /* MemoTableViewCell.swift */,
+				721E490F1E4D9E2A00DD1526 /* MemoTableViewCell.xib */,
+			);
+			name = "UI Cell";
+			sourceTree = "<group>";
+		};
 		72296B421E42E98800D40DBF /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				7287EEE31E418BA40092422A /* MemoViewController.swift */,
+				721E49121E4D9FF600DD1526 /* UI Cell */,
 			);
 			name = Memo;
 			sourceTree = "<group>";
@@ -245,6 +284,7 @@
 				72803A131E3F285A004A543A /* Intro */,
 				72296B4A1E42F0C700D40DBF /* Main */,
 				72296B441E42E9C000D40DBF /* Playmode */,
+				7201DBBF1E4C6D7C0029E146 /* Result */,
 				72296B491E42F08800D40DBF /* Rank */,
 				72296B4B1E42F0D200D40DBF /* Memo */,
 				72296B4C1E42F0EB00D40DBF /* Setting */,
@@ -275,6 +315,7 @@
 		727773211E49D7B500A52656 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				7201DBB81E4C5F6F0029E146 /* Nickname DEMO.otf */,
 				727773191E49D7AE00A52656 /* RobotoSlab-Bold.ttf */,
 				7277731A1E49D7AE00A52656 /* RobotoSlab-Light.ttf */,
 				7277731B1E49D7AE00A52656 /* RobotoSlab-Regular.ttf */,
@@ -445,7 +486,9 @@
 				72296B481E42EFCB00D40DBF /* RankViewController.xib in Resources */,
 				724CDEB51E3CF0C5003F47E2 /* LaunchScreen.storyboard in Resources */,
 				724CDEB21E3CF0C5003F47E2 /* Assets.xcassets in Resources */,
+				7201DBBE1E4C6D750029E146 /* Result_CollectionViewCell.xib in Resources */,
 				724CDEAD1E3CF0C5003F47E2 /* Main.storyboard in Resources */,
+				721E49111E4D9E2A00DD1526 /* MemoTableViewCell.xib in Resources */,
 				7277731D1E49D7AE00A52656 /* RobotoSlab-Bold.ttf in Resources */,
 				7277731E1E49D7AE00A52656 /* RobotoSlab-Light.ttf in Resources */,
 				7277731F1E49D7AE00A52656 /* RobotoSlab-Regular.ttf in Resources */,
@@ -620,6 +663,7 @@
 				72803A1D1E3F3365004A543A /* Play_CollectionViewCell.swift in Sources */,
 				7287EEE41E418BA40092422A /* MemoViewController.swift in Sources */,
 				724CDEB01E3CF0C5003F47E2 /* WTW.xcdatamodeld in Sources */,
+				721E49101E4D9E2A00DD1526 /* MemoTableViewCell.swift in Sources */,
 				72ACE0DF1E4B09EC0089F677 /* IPlay.swift in Sources */,
 				72803A151E3F287A004A543A /* Into_CollectionViewCell.swift in Sources */,
 				72296B541E42F17A00D40DBF /* AboutusViewController.swift in Sources */,
@@ -629,7 +673,9 @@
 				72803A1B1E3F32AA004A543A /* PlayViewController.swift in Sources */,
 				72803A191E3F3261004A543A /* MainMenuViewController.swift in Sources */,
 				72803A101E3F20CB004A543A /* LaunchScreenController.swift in Sources */,
+				7201DBBD1E4C6D750029E146 /* Result_CollectionViewCell.swift in Sources */,
 				72ACE0DB1E4B08430089F677 /* MainMenuModel.swift in Sources */,
+				7201DBBA1E4C6D1E0029E146 /* ResultViewController.swift in Sources */,
 				727773181E49D21A00A52656 /* BaseViewController.swift in Sources */,
 				72ACE0DA1E4B08430089F677 /* IMainMenu.swift in Sources */,
 				724CDEA81E3CF0C5003F47E2 /* AppDelegate.swift in Sources */,

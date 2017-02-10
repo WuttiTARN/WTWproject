@@ -84,6 +84,11 @@ class MainMenuViewController: BaseViewController {
     
     @IBAction func btnRankPressed(_ sender: Any) {
         
+        let get_user_info = UserDefaults.standard.value(forKey: "USER_INFO")
+        
+        if (get_user_info == nil){
+
+        
         //TODO: Condition Log in with Facebook, rank
         let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
         
@@ -110,6 +115,9 @@ class MainMenuViewController: BaseViewController {
                     }
                 })
             }
+        }
+        } else {
+        goToRank()
         }
     }
 }

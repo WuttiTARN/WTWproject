@@ -52,6 +52,14 @@ class BaseViewController: UIViewController {
         button.layer.shadowRadius = 3
     }
     
+    func addShadowView(view:UIView) {
+        
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOpacity = 1
+        view.layer.shadowOffset = CGSize(width: 0, height: 5)
+        view.layer.shadowRadius = 3
+    }
+    
     func  goToMainClass()  {
         
         let main_class = storyBoard.instantiateViewController(withIdentifier: "MainMenuViewController") as! MainMenuViewController
@@ -69,5 +77,23 @@ class BaseViewController: UIViewController {
         
         let intro_class = storyBoard.instantiateViewController(withIdentifier: "IntroController") as! IntroController
         self.navigationController?.pushViewController(intro_class, animated: true)
+    }
+    
+    func goToSetting(){
+        
+        let setting_class = storyBoard.instantiateViewController(withIdentifier: "SettingViewController") as! SettingViewController
+        self.navigationController?.pushViewController(setting_class, animated: true)
+    }
+    
+    func goToRank(){
+        
+        let rank_class = storyBoard.instantiateViewController(withIdentifier: "RankViewController") as! RankViewController
+        self.navigationController?.pushViewController(rank_class, animated: true)
+    }
+    
+    func goToMemo(){
+        
+        let memo_class = storyBoard.instantiateViewController(withIdentifier: "MemoViewController") as! MemoViewController
+        self.navigationController?.pushViewController(memo_class, animated: true)
     }
 }

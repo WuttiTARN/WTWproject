@@ -9,30 +9,64 @@
 import UIKit
 
 class MemoViewController: UIViewController {
-
-    //@IBOutlet weak var bg_memo: UIImageView!
+    
+    @IBOutlet weak var image_default: UIImageView!
+    var memo_array:NSMutableArray = NSMutableArray()
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        //bg_memo.image = UIImage(named: "memo")
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        getData()
+        setUI()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func getData() {
+        
+        let get_memo_info = UserDefaults.standard.value(forKey: "MEMO_INFO")
+        if (get_memo_info != nil){
+            memo_array = get_memo_info as! NSMutableArray
+        }
+        print(memo_array)
+        self.tableView?.register(UINib(nibName:"MemoTableViewCell" as String, bundle: nil), forCellReuseIdentifier: "cell")
     }
-    */
+    
+    func setUI() {
+        
+        self.image_default.isHidden = true
+
+        self.tableView.separatorColor = UIColor.clear
+        self.tableView.backgroundColor = UIColor.clear
+    }
+    
+}
+
+
+extension MemoViewController: UITableViewDelegate,UITableViewDataSource {
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        
+        if(self.memo_array.count == 0){
+            self.image_default.isHidden = false
+        }
+        
+        return self.memo_array.count
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        
+        let cell:MemoTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as! MemoTableViewCell
+        var memo_dic:NSDictionary = NSDictionary()
+        memo_dic = memo_array[indexPath.row] as! NSDictionary
+        let memo_name:String = String(format:"%@",memo_dic["name"] as! String)
+        let memo_des:String = String(format:"%@",memo_dic["des"] as! String)
+        let memo_img:String = String(format:"%@",memo_dic["image"] as! String)
+
+        
+        cell.memo_name.text = memo_name
+        cell.memo_des.text = memo_des
+        cell.memo_image.kf.setImage(with: URL(string:memo_img));
+
+        return cell
+    }
 
 }

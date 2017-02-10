@@ -22,6 +22,7 @@ class LaunchScreenController: BaseViewController {
         let result = UserDefaults.standard.value(forKey: "FIRSTTIME_LAUNCHING")
         
         if(result == nil){
+            UserDefaults.standard.set("false",forKey:"FIRSTTIME_LAUNCHING")
             self.perform(#selector(self.goToIntroClass),with:nil,afterDelay:2)
         }else {
             self.perform(#selector(self.goToMainClass),with:nil,afterDelay:2)

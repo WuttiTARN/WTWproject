@@ -10,26 +10,20 @@ import UIKit
 
 class TutorialViewController: UIViewController {
 
+    @IBOutlet weak var show_tutorial: UIScrollView!
+
+    var size = CGSize(width: 375, height: 1390)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+       show_tutorial.contentSize = size
+        
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func btn_leave(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+//        _ = navigationController?.popViewController(animated: true)
     }
-    */
-
 }

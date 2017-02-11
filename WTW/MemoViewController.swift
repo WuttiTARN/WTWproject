@@ -10,6 +10,10 @@ import UIKit
 
 class MemoViewController: UIViewController {
     
+    @IBAction func btn_back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     @IBOutlet weak var image_default: UIImageView!
     var memo_array:NSMutableArray = NSMutableArray()
     @IBOutlet weak var tableView: UITableView!

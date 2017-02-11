@@ -187,6 +187,9 @@ class PlayViewController: BaseViewController {
         
         _ = self.navigationController?.popViewController(animated: true)
     }
+    
+    func prepareForReuse(){
+    }
 }
 
 extension PlayViewController:UICollectionViewDataSource,UICollectionViewDelegate{

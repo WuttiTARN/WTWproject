@@ -67,7 +67,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" id="RVn-5k-gYg">
-                                        <rect key="frame" x="0.0" y="3" width="375" height="662"/>
+                                        <rect key="frame" x="0.0" y="2.5" width="375" height="662"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="662"/>
@@ -261,6 +261,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nav_memo" id="6f0-ww-iVz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UHp-lf-NEw">
+                                <rect key="frame" x="20" y="15" width="10" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="btn_back"/>
+                                <connections>
+                                    <action selector="btn_back:" destination="rSl-g9-fnX" eventType="touchUpInside" id="sMJ-gM-Ym3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -676,6 +688,7 @@
         <image name="btn_setting" width="56" height="59"/>
         <image name="main" width="375" height="667"/>
         <image name="memo" width="375" height="667"/>
+        <image name="nav_memo" width="377" height="53"/>
         <image name="nav_tutorial" width="377" height="53"/>
         <image name="playmode" width="375" height="667"/>
         <image name="popup_pause" width="215" height="261"/>

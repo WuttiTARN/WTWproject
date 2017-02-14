@@ -9,9 +9,32 @@
 import UIKit
 
 class ResultViewController: UIViewController {
+    
     @IBOutlet weak var text_score: UITextField!
     
-    @IBOutlet weak var congrat_collectionView: UICollectionView!
+    @IBOutlet weak var img_congrat: UIImageView!
+    
+    var point:String = " "
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setPoint(point: point)
+    }
+    
+    func setPoint(point:String){
+        
+        print("point = ",point)
+        
+        let num_point:Int = Int(point)!
+        
+        if (num_point >= 0 && num_point <= 700){
+            self.img_congrat.image = UIImage(named: "oneStar")
+        }else if(num_point >= 700 && num_point <= 1500){
+            self.img_congrat.image = UIImage(named: "twoStars")
+        }else{
+            self.img_congrat.image = UIImage(named: "threeStars")
+        }
+    }
     
     @IBAction func btn_playagain(_ sender: Any) {
     }
@@ -20,27 +43,20 @@ class ResultViewController: UIViewController {
     @IBAction func btn_share(_ sender: Any) {
     }
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

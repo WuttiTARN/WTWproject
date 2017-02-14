@@ -91,4 +91,11 @@ class PlayModel: IPlay {
         number_array = base_class.randomArray(old_array: number_array)
         return number_array
     }
+    
+    func setInfo(user_info:[String:Any],key:Int) {
+        
+        let new_key = String(format: "user:%d",key)
+        let itemRef = self.ref.child("Users").child(new_key)
+        itemRef.setValue(user_info)
+    }
 }

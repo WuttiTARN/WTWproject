@@ -16,5 +16,7 @@ protocol IPlay {
     func getVocabDataWithLevel(level:Int)
     func randomIndexOfRandomImage() -> NSMutableArray
     func getImageVocabWithId(id:Int) -> String
+    func setInfo(user_info:[String:Any],key:Int)
+    
 }
 

@@ -96,4 +96,11 @@ class BaseViewController: UIViewController {
         let memo_class = storyBoard.instantiateViewController(withIdentifier: "MemoViewController") as! MemoViewController
         self.navigationController?.pushViewController(memo_class, animated: true)
     }
+    
+    func goToResult(point:String){
+        
+        let result_class = storyBoard.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
+        result_class.point = point
+        self.navigationController?.pushViewController(result_class, animated: true)
+    }
 }

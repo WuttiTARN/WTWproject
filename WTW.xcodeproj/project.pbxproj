@@ -14,6 +14,7 @@
 		7201DBBE1E4C6D750029E146 /* Result_CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7201DBBC1E4C6D750029E146 /* Result_CollectionViewCell.xib */; };
 		721E49101E4D9E2A00DD1526 /* MemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721E490E1E4D9E2A00DD1526 /* MemoTableViewCell.swift */; };
 		721E49111E4D9E2A00DD1526 /* MemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721E490F1E4D9E2A00DD1526 /* MemoTableViewCell.xib */; };
+		72259F801E530286008F4FBF /* Nickname DEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7201DBB81E4C5F6F0029E146 /* Nickname DEMO.otf */; };
 		72296B471E42EFCB00D40DBF /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72296B451E42EFCB00D40DBF /* RankViewController.swift */; };
 		72296B481E42EFCB00D40DBF /* RankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72296B461E42EFCB00D40DBF /* RankViewController.xib */; };
 		72296B4F1E42F12B00D40DBF /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72296B4D1E42F12B00D40DBF /* SettingViewController.swift */; };
@@ -490,6 +491,7 @@
 				724CDEAD1E3CF0C5003F47E2 /* Main.storyboard in Resources */,
 				721E49111E4D9E2A00DD1526 /* MemoTableViewCell.xib in Resources */,
 				7277731D1E49D7AE00A52656 /* RobotoSlab-Bold.ttf in Resources */,
+				72259F801E530286008F4FBF /* Nickname DEMO.otf in Resources */,
 				7277731E1E49D7AE00A52656 /* RobotoSlab-Light.ttf in Resources */,
 				7277731F1E49D7AE00A52656 /* RobotoSlab-Regular.ttf in Resources */,
 				72803A171E3F288E004A543A /* Into_CollectionViewCell.xib in Resources */,

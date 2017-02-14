@@ -53,6 +53,8 @@ class MainMenuModel: IMainMenu {
     // register new user
     func registerUnknownUser(new_user:[String:Any]) {
         
+        UserDefaults.standard.set(new_user,forKey:"USER_INFO")
+
         let new_key = String(format: "user:%d",users_count+1)
         let itemRef = self.ref.child("Users").child(new_key)
         itemRef.setValue(new_user)

@@ -11,9 +11,6 @@
         <array key="Nickname DEMO.otf">
             <string>NicknameDEMO</string>
         </array>
-        <array key="RobotoSlab-Bold.ttf">
-            <string>RobotoSlab-Bold</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Launch Screen Controller-->
@@ -57,17 +54,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="nxO-Q3-tQC">
-                                    <size key="itemSize" width="375" height="662"/>
+                                    <size key="itemSize" width="375" height="667"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" id="RVn-5k-gYg">
-                                        <rect key="frame" x="0.0" y="3" width="375" height="662"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="662"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
                                     </collectionViewCell>
@@ -87,7 +84,7 @@
                                 <rect key="frame" x="83" y="568" width="209" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99215686274509807" green="0.96078431372549022" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -443,17 +440,17 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" dataMode="prototypes" id="h9R-P5-KSl">
-                                <rect key="frame" x="27" y="202" width="320" height="465"/>
+                                <rect key="frame" x="37" y="202" width="300" height="465"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="teZ-zK-716">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="teZ-zK-716">
                                     <size key="itemSize" width="100" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1J7-Pz-Bw4">
-                                        <rect key="frame" x="5" y="5" width="100" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -461,7 +458,7 @@
                                         </view>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="c1X-5h-fPa">
-                                        <rect key="frame" x="110" y="5" width="100" height="100"/>
+                                        <rect key="frame" x="100" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -469,7 +466,7 @@
                                         </view>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mZO-Jl-1Tq">
-                                        <rect key="frame" x="215" y="5" width="100" height="100"/>
+                                        <rect key="frame" x="200" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -477,7 +474,7 @@
                                         </view>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="waM-DX-OwU">
-                                        <rect key="frame" x="5" y="110" width="100" height="100"/>
+                                        <rect key="frame" x="0.0" y="100" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -485,7 +482,7 @@
                                         </view>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Lqb-0y-kAo">
-                                        <rect key="frame" x="110" y="110" width="100" height="100"/>
+                                        <rect key="frame" x="100" y="100" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -507,17 +504,17 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1XK-YV-MmN">
-                                        <rect key="frame" x="305" y="30" width="34" height="37"/>
+                                        <rect key="frame" x="305" y="15" width="34" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="btn_pauseEasy"/>
                                         <connections>
                                             <action selector="btnStopPressedWithSender:" destination="XfW-5h-DM8" eventType="touchUpInside" id="zCM-5o-g2W"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="15C-nL-dbe">
-                                        <rect key="frame" x="100" y="15" width="51" height="15"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="15C-nL-dbe">
+                                        <rect key="frame" x="117" y="13" width="184" height="15"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -529,14 +526,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="EASY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yCH-yS-bI1">
-                                        <rect key="frame" x="33" y="11" width="66" height="25"/>
+                                        <rect key="frame" x="33" y="11" width="88" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="NicknameDEMO" family="Nickname DEMO" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" id="R1N-06-J1k">
-                                        <rect key="frame" x="100" y="47" width="180" height="2"/>
+                                        <rect key="frame" x="85" y="42" width="216" height="2"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="progressTintColor" red="0.92941176470588238" green="0.77647058823529413" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="trackTintColor" red="0.58823529411764708" green="0.45490196078431372" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
@@ -548,10 +545,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="INa-0A-Ncx">
-                                <rect key="frame" x="85" y="121" width="217" height="47"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Word" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="INa-0A-Ncx">
+                                <rect key="frame" x="82" y="70" width="213" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="RobotoSlab-Bold" family="Roboto Slab" pointSize="34"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -604,6 +601,7 @@
                     </view>
                     <connections>
                         <outlet property="bg_playmode" destination="hxO-1L-5eC" id="Lhm-I1-8ZJ"/>
+                        <outlet property="btn_resume" destination="1XK-YV-MmN" id="nrg-Ic-Lct"/>
                         <outlet property="collectionView" destination="h9R-P5-KSl" id="REi-Kx-1g1"/>
                         <outlet property="progressBar" destination="R1N-06-J1k" id="LxW-iG-gkI"/>
                         <outlet property="status_bg" destination="1Kr-pQ-fSk" id="NmP-Cy-4cn"/>
@@ -633,25 +631,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oPB-PV-V10">
-                                <rect key="frame" x="133" y="530" width="108" height="63"/>
+                                <rect key="frame" x="104" y="500" width="168" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Play again"/>
+                                <state key="normal" backgroundImage="btn_playAgain"/>
                                 <connections>
                                     <action selector="btn_playagain:" destination="KYe-BC-fJZ" eventType="touchUpInside" id="0V4-mr-QCY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C3y-O8-Aqc">
-                                <rect key="frame" x="108" y="601" width="43" height="30"/>
+                                <rect key="frame" x="122" y="579" width="56" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="memo"/>
+                                <state key="normal" backgroundImage="btn_memo"/>
                                 <connections>
                                     <action selector="btn_memo:" destination="KYe-BC-fJZ" eventType="touchUpInside" id="2zk-X6-zZ1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SEO-NZ-Cqi">
-                                <rect key="frame" x="220" y="601" width="40" height="30"/>
+                                <rect key="frame" x="199" y="579" width="56" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Share"/>
+                                <state key="normal" backgroundImage="btn_share"/>
                                 <connections>
                                     <action selector="btn_share:" destination="KYe-BC-fJZ" eventType="touchUpInside" id="Cyf-59-Vzj"/>
                                 </connections>
@@ -660,18 +658,18 @@
                                 <rect key="frame" x="-12" y="168" width="402" height="297"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="YOU GOT" textAlignment="center" minimumFontSize="17" id="kJo-cY-Jag">
-                                <rect key="frame" x="0.0" y="30" width="375" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="NicknameDEMO" family="Nickname DEMO" pointSize="46"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Point" textAlignment="center" minimumFontSize="17" id="16g-NB-jlY">
                                 <rect key="frame" x="0.0" y="90" width="375" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="NicknameDEMO" family="Nickname DEMO" pointSize="67"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="YOU GOT" textAlignment="center" minimumFontSize="17" id="kJo-cY-Jag">
+                                <rect key="frame" x="0.0" y="40" width="375" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="NicknameDEMO" family="Nickname DEMO" pointSize="46"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -716,9 +714,11 @@
         <image name="btn_memo" width="56" height="59"/>
         <image name="btn_newgame" width="170" height="64"/>
         <image name="btn_pauseEasy" width="34" height="37"/>
+        <image name="btn_playAgain" width="168" height="62"/>
         <image name="btn_rank" width="56" height="59"/>
         <image name="btn_resume" width="170" height="64"/>
         <image name="btn_setting" width="56" height="59"/>
+        <image name="btn_share" width="56" height="59"/>
         <image name="main" width="375" height="667"/>
         <image name="memo" width="375" height="667"/>
         <image name="nav_memo" width="377" height="53"/>

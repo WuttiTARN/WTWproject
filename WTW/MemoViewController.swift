@@ -27,6 +27,7 @@ class MemoViewController: UIViewController {
     func getData() {
         
         let get_memo_info = UserDefaults.standard.value(forKey: "MEMO_INFO")
+        print("get memo info",get_memo_info)
         if (get_memo_info != nil){
             memo_array = get_memo_info as! NSMutableArray
         }
@@ -37,7 +38,6 @@ class MemoViewController: UIViewController {
     func setUI() {
         
         self.image_default.isHidden = true
-
         self.tableView.separatorColor = UIColor.clear
         self.tableView.backgroundColor = UIColor.clear
     }
@@ -71,6 +71,10 @@ extension MemoViewController: UITableViewDelegate,UITableViewDataSource {
         cell.memo_image.kf.setImage(with: URL(string:memo_img));
 
         return cell
+    }
+
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
+        return 104.0
     }
 
 }

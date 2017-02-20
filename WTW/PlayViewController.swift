@@ -24,6 +24,7 @@ class PlayViewController: BaseViewController {
     @IBOutlet weak var view_pause: UIView!
     @IBOutlet weak var view_black: UIView!
     @IBOutlet weak var tx_view_black: UILabel!
+    @IBOutlet weak var btn_resume: UIButton!
     
     var vocab_num:Int = 1
     
@@ -50,6 +51,7 @@ class PlayViewController: BaseViewController {
     
     var target_time:Int = 12
     var index_vocab:Int = 2
+    var array_color:NSMutableArray = NSMutableArray()
     
     override func viewDidLoad() {
         
@@ -113,6 +115,7 @@ class PlayViewController: BaseViewController {
                 }
                 
                 image_random_array.add(new_image_with_id)
+                array_color.add(UIColor.clear)
                 j = j+1
             }
             
@@ -124,7 +127,7 @@ class PlayViewController: BaseViewController {
         
         print("finished")
         self.collectionView.reloadData()
-        self.perform(#selector(callAnimation), with: nil, afterDelay: 3)
+        self.perform(#selector(callAnimation), with: nil, afterDelay: 0)
     }
     func setDataVocabToModel(_ notification: NSNotification) {
         
@@ -155,6 +158,10 @@ class PlayViewController: BaseViewController {
     
     func set_ui(){
         
+        self.progressBar.transform = self.progressBar.transform.scaledBy(x: 1, y: 10)
+        self.progressBar.layer.cornerRadius = 5.0
+        self.progressBar.clipsToBounds = true
+        
         self.view_pause.isHidden = true
         self.view_black.isHidden = false
         self.tx_view_black.isHidden = false
@@ -166,19 +173,38 @@ class PlayViewController: BaseViewController {
             self.status_bg.image = UIImage(named: "status_easy")
             self.tx_vocab_num.textColor = UIColor(red: (150/255.0), green: (116/255.0), blue: (6/255.0), alpha: 1.0)
             self.tx_point.textColor = UIColor(red: (150/255.0), green: (116/255.0), blue: (6/255.0), alpha: 1.0)
+            //progress bar
+            progressBar.trackTintColor = UIColor(red: (237/255.0), green: (198/255.0), blue: (39/255.0), alpha: 1.0)
+            progressBar.progressTintColor = UIColor(red: (150/255.0), green: (116/255.0), blue: (6/255.0), alpha: 1.0)
+            //pause button
+            btn_resume.setImage(#imageLiteral(resourceName: "btn_pauseEasy"),for:UIControlState.normal)
+            
+            
         }else if(play_level == 2){
             self.tx_vocab_level.text = "MEDIUM"
             self.tx_vocab_level.textColor = UIColor(red: (208/255.0), green: (247/255.0), blue: (254/255.0), alpha: 1.0)
             self.status_bg.image = UIImage(named: "status_medium")
             self.tx_vocab_num.textColor = UIColor(red: (208/255.0), green: (247/255.0), blue: (254/255.0), alpha: 1.0)
             self.tx_point.textColor = UIColor(red: (255/255.0), green: (255/255.0), blue: (255/255.0), alpha: 1.0)
+            //progress bar
+            progressBar.trackTintColor = UIColor(red: (208/255.0), green: (247/255.0), blue: (254/255.0), alpha: 1.0)
+            progressBar.progressTintColor = UIColor(red: (13/255.0), green: (122/255.0), blue: (172/255.0), alpha: 1.0)
+            //pause button
+            btn_resume.setImage(#imageLiteral(resourceName: "btn_pauseMedium"),for:UIControlState.normal)
         }else{
             self.tx_vocab_level.text = "HARD"
             self.tx_vocab_level.textColor = UIColor(red: (220/255.0), green: (248/255.0), blue: (0/255.0), alpha: 1.0)
             self.status_bg.image = UIImage(named: "status_hard")
             self.tx_vocab_num.textColor = UIColor(red: (220/255.0), green: (248/255.0), blue: (0/255.0), alpha: 1.0)
             self.tx_point.textColor = UIColor(red: (255/255.0), green: (255/255.0), blue: (255/255.0), alpha: 1.0)
+            //progress bar
+            progressBar.trackTintColor = UIColor(red: (220/255.0), green: (248/255.0), blue: (0/255.0), alpha: 1.0)
+            progressBar.progressTintColor = UIColor(red: (50/255.0), green: (107/255.0), blue: (24/255.0), alpha: 1.0)
+            //pause button
+            btn_resume.setImage(#imageLiteral(resourceName: "btn_pauseHard"),for:UIControlState.normal)
+            
         }
+        
         
         count_number()
     }
@@ -217,7 +243,6 @@ class PlayViewController: BaseViewController {
                     self.view_black.isHidden = true
                     
                     self.setVocabAndId(index: 1)
-                    self.progressBar.transform = self.progressBar.transform.scaledBy(x: 1, y: 10)
                     
                     self.progressBarTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector:#selector(PlayViewController.setProgress), userInfo: nil, repeats: true)
                 })
@@ -246,8 +271,9 @@ class PlayViewController: BaseViewController {
             
             self.tx_view_black.font = UIFont(name: "Nickname DEMO", size: 50.0)
             self.tx_view_black.text = "time's up"
-            progressBarTimer!.invalidate() // cancel count progressBarTimer
             
+            
+            progressBarTimer!.invalidate() // cancel count progressBarTimer
             updateHightScore()
             
             self.perform(#selector(self.gotoResultWithPoint), with: nil, afterDelay: 2)
@@ -284,16 +310,18 @@ class PlayViewController: BaseViewController {
         self.tx_view_black.isHidden = true
         self.view_pause.isHidden = false
         self.view_black.isHidden = false
+        progressBarTimer!.invalidate()
     }
     
     @IBAction func btnResumePressed(_ sender: Any) {
         
         isStopped = false
         self.view_black.isHidden = true
+        self.progressBarTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector:#selector(PlayViewController.setProgress), userInfo: nil, repeats: true)
     }
     
     @IBAction func btnNewGamePressed(_ sender: Any) {
-        
+        progressBarTimer!.invalidate()
         updateHightScore()
         _ = self.navigationController?.popViewController(animated: true)
     }
@@ -323,6 +351,7 @@ extension PlayViewController:UICollectionViewDataSource,UICollectionViewDelegate
         
         let cell:Play_CollectionViewCell=collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! Play_CollectionViewCell
         cell.setImageCell(image_array:image_array[indexPath.row] as! NSMutableDictionary)
+        cell.backgroundColor = array_color[indexPath.row] as? UIColor
         return cell
     }
     
@@ -334,18 +363,24 @@ extension PlayViewController:UICollectionViewDataSource,UICollectionViewDelegate
         
         id_image = dic_vocab_selected["id_image"] as! Int
         
-        if (id_image != id_image_data){
+        if (id_image != id_image_data){ // กดไม่ซ้ำ
+            
+            id_image_data = id_image
             
             if(id_vocab == selected_image_id){ // correct
                 
                 self.tx_point.text = String(format: "%d", sum_point + 10)
                 sum_point = sum_point+10
-                
+                array_color.replaceObject(at: indexPath.row, with: UIColor.green)
+                collectionView.reloadData()
             }else{
                 
-                id_image_data = id_image
-                var dic_memo_array:NSMutableDictionary = NSMutableDictionary()
+                if (sum_point >= 10){
+                    self.tx_point.text = String(format: "%d", sum_point - 10)
+                    sum_point = sum_point-10
+                }
                 
+                var dic_memo_array:NSMutableDictionary = NSMutableDictionary()
                 if (memo_array.count == 0){
                     
                     dic_memo_array.setValue(id_vocab, forKey:"id_vocab")

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ResultViewController: UIViewController {
+class ResultViewController: BaseViewController {
     
     @IBOutlet weak var text_score: UITextField!
     
@@ -27,20 +27,26 @@ class ResultViewController: UIViewController {
         
         let num_point:Int = Int(point)!
         
-        if (num_point >= 0 && num_point <= 700){
-            self.img_congrat.image = UIImage(named: "oneStar")
-        }else if(num_point >= 700 && num_point <= 1500){
+        if(num_point >= 700 && num_point <= 1500){
             self.img_congrat.image = UIImage(named: "twoStars")
-        }else{
+            text_score.text = "\(num_point)"
+        }else if(num_point > 1500){
             self.img_congrat.image = UIImage(named: "threeStars")
+            text_score.text = "\(num_point)"
+        }else{
+            text_score.text = "\(num_point)"
+            self.img_congrat.image = UIImage(named: "oneStar")
         }
     }
     
     @IBAction func btn_playagain(_ sender: Any) {
+        goToMainClass()
     }
     @IBAction func btn_memo(_ sender: Any) {
+        goToMemo()
     }
     @IBAction func btn_share(_ sender: Any) {
+        
     }
     
     override func didReceiveMemoryWarning() {

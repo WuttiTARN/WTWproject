@@ -93,7 +93,7 @@ class PlayModel: IPlay {
     }
     
     func setInfo(user_info:[String:Any],key:Int) {
-        
+        UserDefaults.standard.set(user_info, forKey: "USER_INFO")
         let new_key = String(format: "user:%d",key)
         let itemRef = self.ref.child("Users").child(new_key)
         itemRef.setValue(user_info)

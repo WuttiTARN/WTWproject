@@ -47,6 +47,7 @@
 		72ACE0DB1E4B08430089F677 /* MainMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ACE0D91E4B08430089F677 /* MainMenuModel.swift */; };
 		72ACE0DF1E4B09EC0089F677 /* IPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ACE0DD1E4B09EC0089F677 /* IPlay.swift */; };
 		72ACE0E01E4B09EC0089F677 /* PlayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ACE0DE1E4B09EC0089F677 /* PlayModel.swift */; };
+		72F4EF351E56AFF900477852 /* Arial Rounded Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72F4EF341E56AFF900477852 /* Arial Rounded Bold.ttf */; };
 		ED685A5618896D2F2433BE1B /* Pods_WTWUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6088255D773CCC8424CD55E8 /* Pods_WTWUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +119,7 @@
 		72ACE0D91E4B08430089F677 /* MainMenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuModel.swift; sourceTree = "<group>"; };
 		72ACE0DD1E4B09EC0089F677 /* IPlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPlay.swift; sourceTree = "<group>"; };
 		72ACE0DE1E4B09EC0089F677 /* PlayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayModel.swift; sourceTree = "<group>"; };
+		72F4EF341E56AFF900477852 /* Arial Rounded Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arial Rounded Bold.ttf"; sourceTree = "<group>"; };
 		A3F41086240A97D9D50749BF /* Pods-WTWTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTWTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTWTests/Pods-WTWTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABFA271F4C7A051575C7A3AF /* Pods-WTWUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTWUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTWUITests/Pods-WTWUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3B2ECAAFDDF6D9B667FA140 /* Pods-WTW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTW.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTW/Pods-WTW.release.xcconfig"; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 		727773211E49D7B500A52656 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				72F4EF341E56AFF900477852 /* Arial Rounded Bold.ttf */,
 				7201DBB81E4C5F6F0029E146 /* Nickname DEMO.otf */,
 				727773191E49D7AE00A52656 /* RobotoSlab-Bold.ttf */,
 				7277731A1E49D7AE00A52656 /* RobotoSlab-Light.ttf */,
@@ -492,6 +495,7 @@
 				721E49111E4D9E2A00DD1526 /* MemoTableViewCell.xib in Resources */,
 				7277731D1E49D7AE00A52656 /* RobotoSlab-Bold.ttf in Resources */,
 				72259F801E530286008F4FBF /* Nickname DEMO.otf in Resources */,
+				72F4EF351E56AFF900477852 /* Arial Rounded Bold.ttf in Resources */,
 				7277731E1E49D7AE00A52656 /* RobotoSlab-Light.ttf in Resources */,
 				7277731F1E49D7AE00A52656 /* RobotoSlab-Regular.ttf in Resources */,
 				72803A171E3F288E004A543A /* Into_CollectionViewCell.xib in Resources */,

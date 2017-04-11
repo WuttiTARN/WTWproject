@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import WTW
 
 class WTWTests: XCTestCase {
     

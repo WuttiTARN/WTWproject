@@ -30,10 +30,10 @@ class MainMenuViewController: BaseViewController {
      */
     
     override func viewWillAppear(_ animated: Bool) {
-
+        
         self.main_menu_controller.getUserData()
     }
- 
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -41,10 +41,10 @@ class MainMenuViewController: BaseViewController {
         //กันตาย เผื่อส่งข้อมูลอยู่ แล้ว user กด มี true ต้องมี false
         self.view.isUserInteractionEnabled = false
         
-       //ส่งสัญญาณข้ามหน้า เราทำงานเสร็จแล้วนะ --> ส่งเข้า method ที่ตั้งไว้
+        //ส่งสัญญาณข้ามหน้า เราทำงานเสร็จแล้วนะ --> ส่งเข้า method ที่ตั้งไว้
         NotificationCenter.default.addObserver(self, selector: #selector(self.setDataToModel(_:)), name: NSNotification.Name(rawValue: "SET_DATA"), object: nil)
     }
-
+    
     override func viewWillDisappear(_ animated: Bool) {
         NotificationCenter.default.removeObserver(self)
     }
@@ -87,37 +87,36 @@ class MainMenuViewController: BaseViewController {
         let get_user_info = UserDefaults.standard.value(forKey: "USER_INFO")
         
         if (get_user_info == nil){
-
-        
-        //TODO: Condition Log in with Facebook, rank
-        let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
-        
-        fbLoginManager.logIn(withReadPermissions: ["email"], from: self) { (result, error) -> Void in
             
-            if (error == nil){
+            //TODO: Condition Log in with Facebook, rank
+            let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
+            
+            fbLoginManager.logIn(withReadPermissions: ["email"], from: self) { (result, error) -> Void in
                 
-                let graphRequest:FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, email"])
-                
-                graphRequest.start(completionHandler: { (connection, result, error) -> Void in
+                if (error == nil){
                     
-                    if ((error) != nil){
+                    let graphRequest:FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, email"])
+                    
+                    graphRequest.start(completionHandler: { (connection, result, error) -> Void in
                         
-                        print("Error: \(error)")
-                        
-                    }else{
-                        
-                        let data:[String:AnyObject] = result as! [String : AnyObject]
-                        let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
-                        
-                        self.main_menu_controller.loginFacebookToFirebase(credential: credential, data: data)
-                        
-                        //ใส่โค้ดเปลี่ยนหน้า ไปหน้า rank
-                    }
-                })
+                        if ((error) != nil){
+                            
+                            print("Error: \(error)")
+                            
+                        }else{
+                            
+                            let data:[String:AnyObject] = result as! [String : AnyObject]
+                            let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+                            
+                            self.main_menu_controller.loginFacebookToFirebase(credential: credential, data: data)
+                            
+                            //ใส่โค้ดเปลี่ยนหน้า ไปหน้า rank
+                        }
+                    })
+                }
             }
-        }
         } else {
-        goToRank()
+            goToRank()
         }
     }
 }

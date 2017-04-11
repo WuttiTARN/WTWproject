@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class MainMenuModel: IMainMenu {
+class MainMenuModel: NSObject {
     
     var id:Int!
     var name:String!
@@ -32,7 +32,7 @@ class MainMenuModel: IMainMenu {
     func getUserCount() -> Int {
         return users_count
     }
-
+    
     // retreivce data from firebase
     func getUserData(){
         
@@ -40,10 +40,10 @@ class MainMenuModel: IMainMenu {
             
             var user_data:NSMutableDictionary = NSMutableDictionary()
             user_data = (snap.value as! NSMutableDictionary).mutableCopy() as! NSMutableDictionary
-
+            
             self.users_count = (user_data["Users"] as! NSMutableDictionary).count
             self.dic_db = user_data["Users"] as! NSMutableDictionary
-        
+            
             print("get user ",self.dic_db)
             
             NotificationCenter.default.post(name:NSNotification.Name(rawValue: "SET_DATA"), object: nil)
@@ -54,7 +54,7 @@ class MainMenuModel: IMainMenu {
     func registerUnknownUser(new_user:[String:Any]) {
         
         UserDefaults.standard.set(new_user,forKey:"USER_INFO")
-
+        
         let new_key = String(format: "user:%d",users_count+1)
         let itemRef = self.ref.child("Users").child(new_key)
         itemRef.setValue(new_user)
@@ -63,7 +63,7 @@ class MainMenuModel: IMainMenu {
     func loginFacebookToFirebase(credential:FIRAuthCredential,data:[String:AnyObject]){
         
         FIRAuth.auth()?.signIn(with: credential) { (user, error) in
-
+            
             if error != nil {
                 print("Error: \(error)")
                 return
@@ -132,6 +132,6 @@ class MainMenuModel: IMainMenu {
         init_data(dic: new_user_info)
         
         UserDefaults.standard.set(dic,forKey:"USER_INFO")
-//        self.ref.removeAllObservers()
+        //        self.ref.removeAllObservers()
     }
 }

@@ -42,7 +42,6 @@ class PlayViewController: BaseViewController {
     var finishedSetData:Bool = false
     
     var image_array:NSMutableArray! = NSMutableArray()
-    var memo_array:NSMutableArray! = NSMutableArray()
     
     var id_vocab:Int = 0
     var id_image:Int = 0
@@ -141,19 +140,19 @@ class PlayViewController: BaseViewController {
         _ = Timer.scheduledTimer(timeInterval: 0.7, target: self, selector: #selector(self.moveCollectionCell), userInfo: nil, repeats: true);
     }
     
-    func setVocabAndId(index:Int) {
+    func setVocabAndId(index:Int,vocab_number:Int) {
         
-        tx_vocab_num.text = String(format: "%d/10",vocab_num)
+        tx_vocab_num.text = play_model.getVocabIndex(vocab_number: vocab_number)
         tx_vocab.text = play_model.getVocab(index: index,key: "name") as? String
         id_vocab = play_model.getVocab(index: index,key: "id") as! Int
-        
     }
     
     func set_play_level(level:Int){
         
         play_level = level
         NotificationCenter.default.addObserver(self, selector: #selector(self.setDataVocabToModel(_:)), name: NSNotification.Name(rawValue: "SET_VOCAB"), object: nil)
-        play_model.getVocabDataWithLevel(level: level)
+        let set_play_level = play_model.getVocabDataWithLevel(level: level)
+        print("set play level = ",set_play_level)
     }
     
     func set_ui(){
@@ -204,8 +203,6 @@ class PlayViewController: BaseViewController {
             btn_resume.setImage(#imageLiteral(resourceName: "btn_pauseHard"),for:UIControlState.normal)
             
         }
-        
-        
         count_number()
     }
     
@@ -242,26 +239,32 @@ class PlayViewController: BaseViewController {
                     
                     self.view_black.isHidden = true
                     
-                    self.setVocabAndId(index: 1)
+                    self.setVocabAndId(index: 1,vocab_number:self.vocab_num)
                     
-                    self.progressBarTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector:#selector(PlayViewController.setProgress), userInfo: nil, repeats: true)
+                    self.progressBarTimer = self.setTimer()
                 })
             })
         })
     }
     
+    func setTimer() -> Timer{
+        
+        return Timer.scheduledTimer(timeInterval: 0.1, target: self, selector:#selector(self.setProgress), userInfo: nil, repeats: true)
+    }
+    
     func setProgress() {
         
         time += 0.1
-        
         progressBar.setProgress(Float(time / 120.0), animated: true)
         
-        if(Int(time) > target_time){
+        if play_model.changeVocab(target_time:target_time,current_time:Int(time)) == true {
             
-            vocab_num = vocab_num + 1
-            setVocabAndId(index: index_vocab)
-            index_vocab = index_vocab+1
-            target_time = target_time + 12
+            vocab_num = play_model.getIndexVocabByTime(time: Int(time))
+            //play_model.updateVocabNumber(vocab_number: vocab_num)
+            
+            setVocabAndId(index: index_vocab,vocab_number:vocab_num)
+            index_vocab = play_model.updateIndexVocab(index: index_vocab)
+            target_time = play_model.updateTargetTime(time: target_time)
         }
         
         if time >= 120 {
@@ -271,7 +274,6 @@ class PlayViewController: BaseViewController {
             
             self.tx_view_black.font = UIFont(name: "Nickname DEMO", size: 50.0)
             self.tx_view_black.text = "time's up"
-            
             
             progressBarTimer!.invalidate() // cancel count progressBarTimer
             updateHightScore()
@@ -367,64 +369,24 @@ extension PlayViewController:UICollectionViewDataSource,UICollectionViewDelegate
             
             id_image_data = id_image
             
-            if(id_vocab == selected_image_id){ // correct
+            if play_model.verifyResult(id_correct_vocab: id_vocab, id_selected_image: selected_image_id, selected_image: selected_image) == true {
                 
                 self.tx_point.text = String(format: "%d", sum_point + 10)
                 sum_point = sum_point+10
                 array_color.replaceObject(at: indexPath.row, with: UIColor.green)
                 collectionView.reloadData()
+                
             }else{
                 
                 if (sum_point >= 10){
                     self.tx_point.text = String(format: "%d", sum_point - 10)
                     sum_point = sum_point-10
                 }
-                
-                var dic_memo_array:NSMutableDictionary = NSMutableDictionary()
-                if (memo_array.count == 0){
-                    
-                    dic_memo_array.setValue(id_vocab, forKey:"id_vocab")
-                    dic_memo_array.setValue(selected_image, forKey:"image")
-                    dic_memo_array.setValue(play_model.getVocab(index: id_vocab, key: "name"), forKey:"name")
-                    dic_memo_array.setValue(play_model.getVocab(index: id_vocab, key: "description"), forKey:"des")
-                    
-                    memo_array.add(dic_memo_array)
-                    
-                }else{
-                    
-                    var i:Int = 0
-                    var vocab_repeat:Bool = false
-                    
-                    for _ in memo_array{
-                        
-                        dic_memo_array = memo_array[i] as! NSMutableDictionary
-                        
-                        let id_image_in_memo_array:Int = dic_memo_array["id_vocab"] as! Int
-                        
-                        if (id_vocab == Int(id_image_in_memo_array)){
-                            vocab_repeat = true
-                            break
-                        }
-                        
-                        i = i+1
-                    }
-                    
-                    if(vocab_repeat == false){
-                        
-                        let new_memo_dic:NSMutableDictionary = NSMutableDictionary()
-                        new_memo_dic.setValue(id_vocab, forKey:"id_vocab")
-                        new_memo_dic.setValue(play_model.getVocab(index: id_vocab, key: "name"), forKey:"name")
-                        new_memo_dic.setValue(play_model.getVocab(index: id_vocab, key: "description"), forKey:"des")
-                        new_memo_dic.setValue(selected_image, forKey:"image")
-                        
-                        memo_array.add(new_memo_dic)
-                    }
-                }
             }
         }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        UserDefaults.standard.set(memo_array,forKey:"MEMO_INFO")
+        play_model.saveMemoArray()
     }
 }

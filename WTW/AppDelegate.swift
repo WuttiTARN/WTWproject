@@ -27,6 +27,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Facebook SDK
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
+        let result = UserDefaults.standard.value(forKey: "FIRSTTIME_LAUNCHING")
+        
+        if result == nil{
+            UserDefaults.standard.set("",forKey:"FIRSTTIME_LAUNCHING")
+        }
+
         return true
     }
     

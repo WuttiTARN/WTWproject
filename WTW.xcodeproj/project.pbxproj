@@ -43,11 +43,13 @@
 		72803A1D1E3F3365004A543A /* Play_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72803A1C1E3F3365004A543A /* Play_CollectionViewCell.swift */; };
 		72803A1F1E3F336F004A543A /* Play_CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72803A1E1E3F336F004A543A /* Play_CollectionViewCell.xib */; };
 		7287EEE41E418BA40092422A /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7287EEE31E418BA40092422A /* MemoViewController.swift */; };
-		72ACE0DA1E4B08430089F677 /* IMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ACE0D81E4B08430089F677 /* IMainMenu.swift */; };
 		72ACE0DB1E4B08430089F677 /* MainMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ACE0D91E4B08430089F677 /* MainMenuModel.swift */; };
-		72ACE0DF1E4B09EC0089F677 /* IPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ACE0DD1E4B09EC0089F677 /* IPlay.swift */; };
 		72ACE0E01E4B09EC0089F677 /* PlayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ACE0DE1E4B09EC0089F677 /* PlayModel.swift */; };
+		72C36D1E1E9CC3CE006C76E5 /* LaunchScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C36D1D1E9CC3CE006C76E5 /* LaunchScreenTests.swift */; };
+		72C36D211E9CC686006C76E5 /* MemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C36D1F1E9CC686006C76E5 /* MemoTests.swift */; };
+		72C36D221E9CC686006C76E5 /* PlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C36D201E9CC686006C76E5 /* PlayTests.swift */; };
 		72F4EF351E56AFF900477852 /* Arial Rounded Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72F4EF341E56AFF900477852 /* Arial Rounded Bold.ttf */; };
+		CE09D8C2431CC11802ACD10F /* Pods_WTW_WTWTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FCA70DC6D431CAD12D881D /* Pods_WTW_WTWTests.framework */; };
 		ED685A5618896D2F2433BE1B /* Pods_WTWUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6088255D773CCC8424CD55E8 /* Pods_WTWUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03FCA70DC6D431CAD12D881D /* Pods_WTW_WTWTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTW_WTWTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0434A519AB58781A05EC523C /* Pods-WTWUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTWUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTWUITests/Pods-WTWUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2834000AF8F18185D0422C8B /* Pods-WTW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTW.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTW/Pods-WTW.debug.xcconfig"; sourceTree = "<group>"; };
 		3684EBCBAD81598880CA18C6 /* Pods_WTW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,11 +118,14 @@
 		72803A1C1E3F3365004A543A /* Play_CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Play_CollectionViewCell.swift; sourceTree = "<group>"; };
 		72803A1E1E3F336F004A543A /* Play_CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Play_CollectionViewCell.xib; sourceTree = "<group>"; };
 		7287EEE31E418BA40092422A /* MemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
-		72ACE0D81E4B08430089F677 /* IMainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMainMenu.swift; sourceTree = "<group>"; };
 		72ACE0D91E4B08430089F677 /* MainMenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuModel.swift; sourceTree = "<group>"; };
-		72ACE0DD1E4B09EC0089F677 /* IPlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPlay.swift; sourceTree = "<group>"; };
 		72ACE0DE1E4B09EC0089F677 /* PlayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayModel.swift; sourceTree = "<group>"; };
+		72C36D1D1E9CC3CE006C76E5 /* LaunchScreenTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenTests.swift; sourceTree = "<group>"; };
+		72C36D1F1E9CC686006C76E5 /* MemoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoTests.swift; sourceTree = "<group>"; };
+		72C36D201E9CC686006C76E5 /* PlayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayTests.swift; sourceTree = "<group>"; };
 		72F4EF341E56AFF900477852 /* Arial Rounded Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arial Rounded Bold.ttf"; sourceTree = "<group>"; };
+		99E254019E91AC56915A23F7 /* Pods-WTW-WTWTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTW-WTWTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTW-WTWTests/Pods-WTW-WTWTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E67A3551DDFB708446CF251 /* Pods-WTW-WTWTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTW-WTWTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTW-WTWTests/Pods-WTW-WTWTests.release.xcconfig"; sourceTree = "<group>"; };
 		A3F41086240A97D9D50749BF /* Pods-WTWTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTWTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTWTests/Pods-WTWTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABFA271F4C7A051575C7A3AF /* Pods-WTWUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTWUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTWUITests/Pods-WTWUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3B2ECAAFDDF6D9B667FA140 /* Pods-WTW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTW.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTW/Pods-WTW.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43A35A36631FEB8C46F73629 /* Pods_WTWTests.framework in Frameworks */,
+				CE09D8C2431CC11802ACD10F /* Pods_WTW_WTWTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +169,8 @@
 				A3F41086240A97D9D50749BF /* Pods-WTWTests.release.xcconfig */,
 				ABFA271F4C7A051575C7A3AF /* Pods-WTWUITests.debug.xcconfig */,
 				0434A519AB58781A05EC523C /* Pods-WTWUITests.release.xcconfig */,
+				99E254019E91AC56915A23F7 /* Pods-WTW-WTWTests.debug.xcconfig */,
+				9E67A3551DDFB708446CF251 /* Pods-WTW-WTWTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -207,7 +216,6 @@
 			children = (
 				72ACE0DC1E4B09D70089F677 /* UI Cell */,
 				72803A1A1E3F32AA004A543A /* PlayViewController.swift */,
-				72ACE0DD1E4B09EC0089F677 /* IPlay.swift */,
 				72ACE0DE1E4B09EC0089F677 /* PlayModel.swift */,
 			);
 			name = Playmode;
@@ -227,7 +235,6 @@
 			children = (
 				72803A181E3F3261004A543A /* MainMenuViewController.swift */,
 				72ACE0D91E4B08430089F677 /* MainMenuModel.swift */,
-				72ACE0D81E4B08430089F677 /* IMainMenu.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -301,6 +308,9 @@
 			isa = PBXGroup;
 			children = (
 				724CDEBF1E3CF0C5003F47E2 /* WTWTests.swift */,
+				72C36D1D1E9CC3CE006C76E5 /* LaunchScreenTests.swift */,
+				72C36D1F1E9CC686006C76E5 /* MemoTests.swift */,
+				72C36D201E9CC686006C76E5 /* PlayTests.swift */,
 				724CDEC11E3CF0C5003F47E2 /* Info.plist */,
 			);
 			path = WTWTests;
@@ -361,6 +371,7 @@
 				3684EBCBAD81598880CA18C6 /* Pods_WTW.framework */,
 				3C68B1F790C8FA38DEB3C387 /* Pods_WTWTests.framework */,
 				6088255D773CCC8424CD55E8 /* Pods_WTWUITests.framework */,
+				03FCA70DC6D431CAD12D881D /* Pods_WTW_WTWTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -534,7 +545,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTWTests/Pods-WTWTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTW-WTWTests/Pods-WTW-WTWTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		516E6A8B8F12F7DFA7C2E638 /* [CP] Copy Pods Resources */ = {
@@ -549,7 +560,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTWTests/Pods-WTWTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTW-WTWTests/Pods-WTW-WTWTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6B571BD34349A01B99973806 /* [CP] Check Pods Manifest.lock */ = {
@@ -670,7 +681,6 @@
 				7287EEE41E418BA40092422A /* MemoViewController.swift in Sources */,
 				724CDEB01E3CF0C5003F47E2 /* WTW.xcdatamodeld in Sources */,
 				721E49101E4D9E2A00DD1526 /* MemoTableViewCell.swift in Sources */,
-				72ACE0DF1E4B09EC0089F677 /* IPlay.swift in Sources */,
 				72803A151E3F287A004A543A /* Into_CollectionViewCell.swift in Sources */,
 				72296B541E42F17A00D40DBF /* AboutusViewController.swift in Sources */,
 				72ACE0E01E4B09EC0089F677 /* PlayModel.swift in Sources */,
@@ -683,7 +693,6 @@
 				72ACE0DB1E4B08430089F677 /* MainMenuModel.swift in Sources */,
 				7201DBBA1E4C6D1E0029E146 /* ResultViewController.swift in Sources */,
 				727773181E49D21A00A52656 /* BaseViewController.swift in Sources */,
-				72ACE0DA1E4B08430089F677 /* IMainMenu.swift in Sources */,
 				724CDEA81E3CF0C5003F47E2 /* AppDelegate.swift in Sources */,
 				72296B4F1E42F12B00D40DBF /* SettingViewController.swift in Sources */,
 			);
@@ -693,7 +702,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72C36D1E1E9CC3CE006C76E5 /* LaunchScreenTests.swift in Sources */,
+				72C36D211E9CC686006C76E5 /* MemoTests.swift in Sources */,
 				724CDEC01E3CF0C5003F47E2 /* WTWTests.swift in Sources */,
+				72C36D221E9CC686006C76E5 /* PlayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -867,7 +879,7 @@
 		};
 		724CDED31E3CF0C5003F47E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61B7C192DDB87BD89B93D815 /* Pods-WTWTests.debug.xcconfig */;
+			baseConfigurationReference = 99E254019E91AC56915A23F7 /* Pods-WTW-WTWTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -883,7 +895,7 @@
 		};
 		724CDED41E3CF0C5003F47E2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3F41086240A97D9D50749BF /* Pods-WTWTests.release.xcconfig */;
+			baseConfigurationReference = 9E67A3551DDFB708446CF251 /* Pods-WTW-WTWTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

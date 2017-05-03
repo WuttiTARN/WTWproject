@@ -26,9 +26,11 @@ class MemoViewController: UIViewController {
     
     func getData() {
         
+        
         let get_memo_info = UserDefaults.standard.value(forKey: "MEMO_INFO")
         print("get memo info",get_memo_info)
         if (get_memo_info != nil){
+            //memo_array = get_memo_info as! NSMutableArray
             memo_array = get_memo_info as! NSMutableArray
         }
         print(memo_array)

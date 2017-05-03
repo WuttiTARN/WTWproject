@@ -51,7 +51,8 @@ class PlayViewController: BaseViewController {
     var target_time:Int = 12
     var index_vocab:Int = 2
     var array_color:NSMutableArray = NSMutableArray()
-    
+
+
     override func viewDidLoad() {
         
         super.viewDidLoad()

@@ -25,21 +25,33 @@ class PlayTests: XCTestCase {
 
     func test_selected_button_1_game_level_will_be_easy(){
     
+        let output = playModel.getVocabDataWithLevel(level: 1)
+        XCTAssertEqual(output,"Easy")
+    }
+    
+    func test_selected_button_2_game_level_will_be_medium(){
+        
         let output = playModel.getVocabDataWithLevel(level: 2)
         XCTAssertEqual(output,"Medium")
+    }
+    
+    func test_selected_button_3_game_level_will_be_hard(){
+        
+        let output = playModel.getVocabDataWithLevel(level: 3)
+        XCTAssertEqual(output,"Hard")
     }
     
     //urs5 120s แบ่งเป็นช่วง 12 24 36 48 60 72 84 96 108 120 method +1 เพราะจะได้ตรงกับลำดับของคำศัพท์
     // Test by inputting time and aspect to get return of the vocab id.
     func test_vocab_id_by_time(){
         
-        let output = playModel.getIndexVocabByTime(time: 11)
-        XCTAssertEqual(output,1)
+        let output = playModel.getIndexVocabByTime(time: 119)
+        XCTAssertEqual(output,10)
     }
     
-    func test_correct_image_id_and_selected_image_id_is_equal_2(){
+    func test_correct_image_id_and_selected_image_id_is_equal_1(){
 
-        let output = playModel.verifyResult(id_correct_vocab: 2, id_selected_image: 2, selected_image: "")
+        let output = playModel.verifyResult(id_correct_vocab: 1, id_selected_image: 1, selected_image: "")
         XCTAssertEqual(output,true)
     }
 

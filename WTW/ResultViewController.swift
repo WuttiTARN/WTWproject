@@ -15,7 +15,7 @@ class ResultViewController: BaseViewController {
     @IBOutlet weak var img_congrat: UIImageView!
     
     var point:String = " "
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setPoint(point: point)

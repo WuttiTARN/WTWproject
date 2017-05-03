@@ -22,7 +22,7 @@ class LaunchScreenTests: XCTestCase {
     
     func test_provide_introduction() {
         
-        let output = launchscreen.checkFirstTimeAssess(result:"")
+        let output = launchscreen.checkFirstTimeAccess(result:"")
         XCTAssertEqual(output,true)
         
     }

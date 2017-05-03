@@ -46,7 +46,7 @@ class BaseViewController: UIViewController {
     
     func addShadowBtn(button:UIButton) {
         
-        button.layer.shadowColor = UIColor(red: (218/255.0), green: (218/255.0), blue: (218/255.0), alpha: 1.0).cgColor
+        button.layer.shadowColor = UIColor(red: (0/255.0), green: (0/255.0), blue: (0/255.0), alpha: 0.5).cgColor
         button.layer.shadowOpacity = 1
         button.layer.shadowOffset = CGSize(width: 0, height: 5)
         button.layer.shadowRadius = 3

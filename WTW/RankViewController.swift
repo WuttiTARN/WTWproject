@@ -17,6 +17,10 @@ class RankViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
+    @IBAction func btnBackPressed(_ sender: Any) {
+        // code go to previous scene
+        //self.dismiss(animated: true, completion: nil)
+                _ = navigationController?.popViewController(animated: true)
+    }
 
 }
